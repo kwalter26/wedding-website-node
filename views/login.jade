@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .login.container-fluid
+        .row
+            .col-md-2
+            .col-md-8
+                form(action='/login' method='post' id='login_form')
+                    .panel.panel-default
+                        .panel-heading
+                            h1= title
+                            - if(message.length > 0)
+                                .alert.alert-danger= message
+                        .panel-body
+                            .form-group
+                                label Username
+                                input.form-control(type='text' name='username')
+                            .form-group
+                                label Password
+                                input.form-control(type='password' name='password')
+                        .panel-footer
+                            button.btn.btn-success(type='submit') Login
+
