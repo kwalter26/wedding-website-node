@@ -8,7 +8,7 @@ module.exports = function(app,passport){
   });
 
   app.get('/login',function(req,res,next){
-    res.render('login',{title:'Login',message: req.flash('loginMessage')});
+    res.render('login',{title:'Join the Adventure',message: req.flash('loginMessage')});
   });
 
   app.post('/login', passport.authenticate('local-login', {

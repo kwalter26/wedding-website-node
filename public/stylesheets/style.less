@@ -1,9 +1,55 @@
 @import "../libs/bootstrap/less/bootstrap.less";
+@import "fonts.less";
 
 body {
   background-color: #204d74;
+  overflow-y: hidden;
 }
 
-#login_form .panel{
-  vertical-align: middle;
+.jumbotron{
+  margin-bottom: 0px;
 }
+
+.panel {
+  box-shadow: #0f0f0f ;
+}
+
+#login_form{
+  h1{
+    color: #cdb500;
+    font-family: my-scribble;
+  }
+  label{
+    color: #929292;
+  }
+  .panel{
+    background: rgb(60,60,60);
+    background: rgba(60,60,60,0.4)
+  }
+}
+
+#login-jumbo{
+  background: #383838 url('/images/Kyle_Katie_Engagement-51.jpg') bottom left;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.main-background {
+  background-size: cover;
+  display: none;
+}
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%;
+  height: 50%;
+  min-width: 200px;
+  max-width: 800px;
+  padding: 40px;
+}
+
