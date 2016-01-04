@@ -4,10 +4,17 @@
 $(document).ready(function(){
 
     // Set background height to full screen
-    $('.main-background').height($(window).height()-95);
+    resize();
+    window.addEventListener("resize", resize);
+
 
     // Fade in background
-    $('#login-jumbo').fadeIn('slow',function(){
-
+    $('.background').fadeIn('slow',function(){
+        $('#main-menu').fadeIn('slow');
     });
+
+    function resize(){
+        $('.background').height($(window).height()-95);
+        $('.section').height($(window).height()-95 * 0.8);
+    }
 });

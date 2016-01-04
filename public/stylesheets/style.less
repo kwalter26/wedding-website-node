@@ -2,7 +2,7 @@
 @import "fonts.less";
 
 body {
-  background-color: #204d74;
+  background-color: #2f2f2f;
   overflow-y: hidden;
 }
 
@@ -12,6 +12,8 @@ body {
 
 .panel {
   box-shadow: #0f0f0f ;
+  background: rgb(60,60,60);
+  background: rgba(60,60,60,0.4);
 }
 
 #login_form{
@@ -22,11 +24,24 @@ body {
   label{
     color: #929292;
   }
-  .panel{
-    background: rgb(60,60,60);
-    background: rgba(60,60,60,0.4)
-  }
+
 }
+
+.background{
+  background-size: cover;
+  display: none;
+}
+
+#main-content{
+  display:none;
+}
+
+#main-menu{
+  display:none;
+  font-family: scribble;
+  color:#cdb500;
+}
+
 
 #login-jumbo{
   background: #383838 url('/images/Kyle_Katie_Engagement-51.jpg') bottom left;
@@ -34,9 +49,10 @@ body {
   background-blend-mode: multiply;
 }
 
-.main-background {
+#main-jumbo{
+  background: #383838 url('/images/Kyle_Katie_Engagement-78.jpg') center center;
   background-size: cover;
-  display: none;
+  background-blend-mode: multiply;
 }
 
 .Absolute-Center {

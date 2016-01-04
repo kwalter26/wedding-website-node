@@ -1,6 +1,8 @@
 //var express = require('express');
 //var router = express.Router();
 
+
+
 module.exports = function(app,passport){
 
   app.get('/', isLoggedIn ,function(req, res, next) {

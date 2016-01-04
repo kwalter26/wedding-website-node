@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  .main.container-fluid
-    .row
-      .col-md-12
-        a.btn.btn-success(href='/logout') Logout
-
-  p Welcome to #{title}
+  .jumbotron.background(id='main-jumbo')
+    .container-fluid
+      .row
+        .col-md-6.col-md-offset-1
+          .panel.panel-default.section(id='main-content')
+        .col-md-3.col-md-offset-1
+          .panel.panel-default.section(id='main-menu')
+            ul
+              li
+                a.h3(href='/logout') Logout

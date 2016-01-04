@@ -2,8 +2,8 @@ extends layout
 
 block content
 
-    .jumbotron.main-background(id='login-jumbo')
-        .login.container-fluid
+    .jumbotron.background(id='login-jumbo')
+        .container-fluid
             .row
                 .Absolute-Center.is-Responsive
                     .col-sm-12.col-md-10.col-md-offset-1
@@ -13,9 +13,9 @@ block content
                                     h1= title
                                     - if(message.length > 0)
                                         .alert.alert-danger= message
-                                    .form-group
+                                    .form-group.hidden
                                         label Username
-                                        input.form-control(type='text' name='username')
+                                        input.form-control(type='text' name='username' value='1')
                                     .form-group
                                         label Password
                                         input.form-control(type='password' name='password')
