@@ -10,11 +10,11 @@ $(document).ready(function(){
 
     // Fade in background
     $('.background').fadeIn('slow',function(){
-        $('#main-menu').fadeIn('slow');
+        $('.section').fadeIn('slow');
     });
 
     function resize(){
         $('.background').height($(window).height()-95);
-        $('.section').height($(window).height()-95 * 0.8);
+        $('.section').height($(window).height()-95);
     }
 });

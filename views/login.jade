@@ -10,7 +10,7 @@ block content
                         form(action='/login' method='post' id='login_form')
                             .panel.panel-default
                                 .panel-body
-                                    h1= title
+                                    h1.title= title
                                     - if(message.length > 0)
                                         .alert.alert-danger= message
                                     .form-group.hidden

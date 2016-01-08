@@ -42,6 +42,10 @@ module.exports = function(app,passport){
 
   });
 
+  app.get('/us',isLoggedIn,function(req,res){
+    res.part
+  });
+
 }
 
 // route middleware to make sure a user is logged in
