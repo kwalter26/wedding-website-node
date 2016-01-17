@@ -1,7 +1,6 @@
-/**
- * Created by kyle on 12/23/15.
- */
-$(document).ready(function(){
+var weddingApp = angular.module('weddingApp', []);
+
+function weddingController($scope) {
 
 
     var screenHeight = $(window).height()-95;
@@ -22,23 +21,28 @@ $(document).ready(function(){
         $('#main-menu').fadeIn('slow');
     });
 
-    // Link Control ======================================
-    $('#home-link').on('click',function(){});
-    $('#our-story-link').on('click',function(){
-
-        console.log('here');
-        $('#main-content').fadeIn('slow');
-    });
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
 
 
+    $scope.getHome = function() {
+        $('#main-content').fadeOut('slow');
+    };
 
+    $scope.getOurStory = function(){
+        switchContent('ourstory');
+    };
 
+    $scope.getWeddingParty = function(){
+        switchContent('weddingparty');
+    };
+
+    function switchContent(content){
+        $('#main-content').fadeOut('slow',function(){
+            $('.article').fadeOut('fast');
+            $('.' + content).fadeIn('fast',function(){
+                $('#main-content').fadeIn('slow');
+            });
+        });
+    }
 
     function resize(){
         updateRatio();
@@ -53,4 +57,5 @@ $(document).ready(function(){
         screenHeight = $(window).height()-95;
         screenRatio = screenHeight / 900;
     }
-});
+
+};

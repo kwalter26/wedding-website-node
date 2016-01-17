@@ -1,8 +1,8 @@
 extends layout
 
 block content
-  .jumbotron.background(id='main-jumbo')
-    .container-fluid
+  .jumbotron.background(id='main-jumbo' ng-app='weddingApp')
+    .container-fluid(ng-controller="weddingController")
       .row
         .col-md-3.col-md-offset-1
           .panel.panel-default.section(id='main-menu')
@@ -13,21 +13,28 @@ block content
             hr
             ul
               li.h2.menu-link
-                a(href='#') Home
+                a(id='home-link' href='#' ng-click='getHome()') Home
               li.h2.menu-link
-                a(href='#') Our Story
+                a(id='out-story-link' href='#' ng-click='getOurStory()') Our Story
               li.h2.menu-link
-                a(href='#') Wedding Party
+                a( id='wedding-party-link' href='#' ng-click='getWeddingParty()') Wedding Party
               li.h2.menu-link
-                a(href='#') The Wedding
+                a(id='wedding-link' href='#') The Wedding
               li.h2.menu-link
-                a(href='#') Travel and Accommodations
+                a(id='travel-link' href='#') Travel and Accommodations
               li.h2.menu-link
-                a(href='#') Song Requests
+                a(id='song-link' href='#') Song Requests
               li.h2.menu-link
-                a(href='#') Registry
+                a(id='registry-link' href='#') Registry
               li.h2.menu-link
-                a(href='#') RSVP
+                a(id='rsvp-link' href='#') RSVP
         .col-md-6.col-md-offset-1
-          .panel.panel-default(id='main-content')
+          .panel.panel-default.section(id='main-content' )
+            .ourstory.article
+              h1 Katie and Kyle
+            .weddingparty.article
+              h1 Wedding Party
+            .thewedding.article
+            .travel.article
+            .songrequest.article
 
