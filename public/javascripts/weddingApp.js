@@ -3,8 +3,9 @@ var weddingApp = angular.module('weddingApp', []);
 function weddingController($scope) {
 
     // Initialize local variables ========================
-    var screenHeight = $(window).height()-95;
+    var screenHeight = $(window).height()-40;
     var screenRatio = 1;
+    var minScreenHeight = 662;
 
     // Set background height to full screen ==============
     resize();
@@ -17,7 +18,6 @@ function weddingController($scope) {
     $('.background').fadeIn('slow',function(){
         $('#main-menu').fadeIn('slow');
     });
-
 
     // Content change functions ==========================
     $scope.getHome = function() {
@@ -69,10 +69,13 @@ function weddingController($scope) {
     function resize(){
         updateRatio();
         $('.background').height(screenHeight);
-        $('.section').height(screenHeight);
 
-        $('.menu-link').find('a').css('font-size',(50 * screenRatio *.9) + "px");
-        $('.menu-link').css('margin',(5 * screenRatio) + 'px 0px' + (5 * screenRatio) + 'px 0px');
+        $('.resizable').css('font-size',(50 * screenRatio) + "px");
+        $('.resizable').css('margin-bottom',(5 * screenRatio * 0.05))
+            .css('margin-top',(5 * screenRatio * 0.05));
+
+        console.log(screenHeight)
+
     }
     function updateRatio(){
         screenHeight = $(window).height()-95;
