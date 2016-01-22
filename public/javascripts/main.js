@@ -4,7 +4,7 @@
 $(document).ready(function(){
 
 
-    var screenHeight = $(window).height()-95;
+    var screenHeight = $(window).height()-10;
     var screenRatio = 1;
 
     console.log(screenHeight);

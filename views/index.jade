@@ -1,10 +1,12 @@
 extends layout
 
 block content
-  .jumbotron.background(id='main-jumbo')
+  .main.background.in
+  .background.out
+  .main-content
     .container-fluid
       .row
-        .col-md-3.col-md-offset-1.hidden-sm
+        .col-md-3.hidden-sm
           .panel.panel-default.section(id='main-menu')
             h1.resizable.text-center Katie & Kyle
             h2.resizable.text-center(id='menu-date') July 09, 2016
@@ -28,7 +30,7 @@ block content
                 a.resizable(id='registry-link' href='#' ng-click='getRegistry()') Registry
               li.h2.menu-link
                 a.resizable(id='rsvp-link' href='#' ng-click='getRSVP()') RSVP
-        .col-md-6.col-md-offset-1
+        .col-md-7.col-md-offset-1
           .panel.panel-default.section(id='main-content' )
             .ourstory.article
               h1 Our Story
