@@ -1,49 +1,50 @@
 extends layout
 
 block content
-  .main.background.in
-  .background.out
-  .main-content
-    .container-fluid
-      .row
-        .col-md-3.hidden-sm
-          .panel.panel-default.section(id='main-menu')
-            h1.resizable.text-center Katie & Kyle
-            h2.resizable.text-center(id='menu-date') July 09, 2016
-            h2.resizable.text-center(id='menu-location') Morton, Illinois
-            h2.resizable.text-center(id='menu-paragraph')  Paragraph!!
-            hr
-            ul
-              li.h2.menu-link
-                a.resizable(id='home-link' href='#' ng-click='getHome()') Home
-              li.h2.menu-link
-                a.resizable(id='out-story-link' href='#' ng-click='getOurStory()') Our Story
-              li.h2.menu-link
-                a.resizable( id='wedding-party-link' href='#' ng-click='getWeddingParty()') Wedding Party
-              li.h2.menu-link
-                a.resizable(id='wedding-link' href='#' ng-click='getTheWedding()') The Wedding
-              li.h2.menu-link
-                a.resizable(id='travel-link' href='#' ng-click='getTravel()') Travel and Accommodations
-              li.h2.menu-link
-                a.resizable(id='song-link' href='#' ng-click='getSong()') Song Requests
-              li.h2.menu-link
-                a.resizable(id='registry-link' href='#' ng-click='getRegistry()') Registry
-              li.h2.menu-link
-                a.resizable(id='rsvp-link' href='#' ng-click='getRSVP()') RSVP
-        .col-md-7.col-md-offset-1
-          .panel.panel-default.section(id='main-content' )
-            .ourstory.article
-              h1 Our Story
-            .weddingparty.article
-              h1 Wedding Party
-            .thewedding.article
-              h1 The Wedding
-            .travel.article
-              h1 Travel and Accommodations
-            .songrequest.article
-              h1 Song Request
-            .registry.article
-              h1 Registry
-            .rsvp.article
-              h1 RSVP
+    .main.background.in
+    .background.out
+
+    .main-content
+        .container-fluid
+            .row
+                .col-md-3.hidden-sm
+                .panel.panel-default.section(id='main-menu')
+                    h1.resizable.text-center Katie & Kyle
+                    h3.resizable.text-center(id='menu-date') July 09, 2016
+                    h2.resizable.text-center(id='menu-location') Morton, Illinois
+                    h4.resizable.text-center(id='menu-paragraph')  Paragraph!!
+                    hr
+                    ul
+                        li.h2.menu-link
+                            a.resizable(id='home-link' href='#' ng-mouseover='' ng-click='getHome()') Home
+                        li.h2.menu-link
+                            a.resizable(id='out-story-link' href='#' ng-mouseover='' ng-click='getOurStory()') Our Story
+                        li.h2.menu-link
+                            a.resizable( id='wedding-party-link' href='#' ng-mouseover='' ng-click='getWeddingParty()') Wedding Party
+                        li.h2.menu-link
+                            a.resizable(id='wedding-link' href='#' ng-mouseover='' ng-click='getTheWedding()') The Wedding
+                        li.h2.menu-link
+                            a.resizable(id='travel-link' href='#' ng-mouseover='' ng-click='getTravel()') Travel and Accommodations
+                        li.h2.menu-link
+                            a.resizable(id='song-link' href='#' ng-mouseover='' ng-click='getSong()') Song Requests
+                        li.h2.menu-link
+                            a.resizable(id='registry-link' href='#' ng-mouseover='' ng-click='getRegistry()') Registry
+                        li.h2.menu-link
+                            a.resizable(id='rsvp-link' href='#' ng-mouseover='' ng-click='getRSVP()') RSVP
+                .col-md-7.col-md-offset-1
+                    .panel.panel-default.section(id='main-content' )
+                        .ourstory.article
+                            h1 Our Story
+                        .weddingparty.article
+                            h1 Wedding Party
+                        .thewedding.article
+                            h1 The Wedding
+                        .travel.article
+                            h1 Travel and Accommodations
+                        .songrequest.article
+                            h1 Song Request
+                        .registry.article
+                            h1 Registry
+                        .rsvp.article
+                            h1 RSVP
 

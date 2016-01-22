@@ -27,31 +27,36 @@ function weddingController($scope) {
     };
 
     $scope.getOurStory = function(){
-        switchContent('ourstory',115);
+        switchContent('ourstory',46);
     };
 
     $scope.getWeddingParty = function(){
-        switchContent('weddingparty',129);
+        switchContent('weddingparty',90);
     };
 
     $scope.getTheWedding = function(){
-        switchContent('thewedding',124);
+        switchContent('thewedding',164);
     };
 
     $scope.getTravel = function(){
-        switchContent('travel',129);
+        switchContent('travel',168);
     };
 
     $scope.getSong = function(){
-        switchContent('songrequest',51);
+        switchContent('songrequest',31);
     };
 
     $scope.getRegistry = function(){
-        switchContent('registry',40);
+        switchContent('registry',151);
     };
 
     $scope.getRSVP = function(){
-        switchContent('rsvp',40);
+        switchContent('rsvp',138);
+    };
+
+    // Link Animation ===================================
+    $scope.linkAnimation = function(){
+        $('.menu-link')
     };
 
     // Helper Functions =================================
@@ -79,7 +84,11 @@ function weddingController($scope) {
         updateRatio();
         $('.background').height(screenHeight);
 
-        $('.resizable').css('font-size',(50 * screenRatio) + "px");
+        $('h1.resizable').css('font-size',(50 * screenRatio) + "px");
+        $('h2.resizable').css('font-size',(40 * screenRatio) + "px");
+        $('h3.resizable').css('font-size',(30 * screenRatio) + "px");
+        $('h4.resizable').css('font-size',(20 * screenRatio) + "px");
+        $('a.resizable').css('font-size',(50 * screenRatio) + "px");
         $('.resizable').css('margin-bottom',(5 * screenRatio * 0.05))
             .css('margin-top',(5 * screenRatio * 0.05));
 
@@ -90,5 +99,4 @@ function weddingController($scope) {
         screenHeight = $(window).height();
         screenRatio = screenHeight / 900;
     }
-
 };

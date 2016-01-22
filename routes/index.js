@@ -1,15 +1,19 @@
 //var express = require('express');
 //var router = express.Router();
-
+var down = true;
 
 
 module.exports = function(app,passport){
 
-  app.get('/login',function(req,res,next){
+  app.get('/down',function(req,res,next){
+    res.render('down',{title:'Down For Maintenance'});
+  })
+
+  app.get('/login',isDown,function(req,res,next){
     res.render('login',{title:'Join the Adventure',message: req.flash('loginMessage')});
   });
 
-  app.post('/login', passport.authenticate('local-login', {
+  app.post('/login',isDown, passport.authenticate('local-login', {
     successRedirect : '/', // redirect to the secure profile section
     failureRedirect : '/login', // redirect back to the signup page if there is an error
     failureFlash : true // allow flash messages
@@ -30,7 +34,7 @@ module.exports = function(app,passport){
   //  failureFlash : true // allow flash messages
   //}));
 
-  app.get('/*',isLoggedIn,function(req,res,next){
+  app.get('/*',isDown,isLoggedIn,function(req,res,next){
     res.render('index',{title:'Katie and Kyle Walk Down the Aisle'});
   });
 
@@ -44,4 +48,11 @@ function isLoggedIn(req, res, next) {
     return next();
   // if they aren't redirect them to the home page
   res.redirect('/login');
+}
+
+function isDown(req, res, next){
+  if(!down){
+    return next();
+  }
+  res.redirect('/down')
 }
