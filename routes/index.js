@@ -1,6 +1,6 @@
 //var express = require('express');
 //var router = express.Router();
-var down = true;
+var down = false;
 
 
 module.exports = function(app,passport){

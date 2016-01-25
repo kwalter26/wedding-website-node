@@ -84,9 +84,9 @@ function weddingController($scope) {
         updateRatio();
         $('.background').height(screenHeight);
 
-        $('h1.resizable').css('font-size',(50 * screenRatio) + "px");
-        $('h2.resizable').css('font-size',(40 * screenRatio) + "px");
-        $('h3.resizable').css('font-size',(30 * screenRatio) + "px");
+        $('h1.resizable').css('font-size',(70 * screenRatio) + "px"); // Title
+        $('h2.resizable').css('font-size',(35 * screenRatio) + "px"); //
+        $('h3.resizable').css('font-size',(25 * screenRatio) + "px"); // Date
         $('h4.resizable').css('font-size',(20 * screenRatio) + "px");
         $('a.resizable').css('font-size',(50 * screenRatio) + "px");
         $('.resizable').css('margin-bottom',(5 * screenRatio * 0.05))
