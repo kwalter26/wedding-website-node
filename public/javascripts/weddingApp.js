@@ -25,34 +25,33 @@ function weddingController($scope) {
     $scope.getHome = function() {
         switchContent('home',78);
     };
-
     $scope.getOurStory = function(){
         switchContent('ourstory',46);
     };
-
     $scope.getWeddingParty = function(){
         switchContent('weddingparty',90);
     };
-
     $scope.getTheWedding = function(){
         switchContent('thewedding',164);
     };
-
     $scope.getTravel = function(){
         switchContent('travel',168);
     };
-
     $scope.getSong = function(){
         switchContent('songrequest',31);
     };
-
     $scope.getRegistry = function(){
         switchContent('registry',151);
     };
-
     $scope.getRSVP = function(){
         switchContent('rsvp',138);
     };
+
+
+    // Registry Links
+    $('.pic-link').on('mouseover',function(){
+        $(this).animate()
+    })
 
     // Link Animation ===================================
     $scope.linkAnimation = function(){

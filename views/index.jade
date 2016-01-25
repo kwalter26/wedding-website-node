@@ -127,12 +127,40 @@ block content
 
             .thewedding.article
               h1 The Wedding
+              hr
+
             .travel.article
               h1 Travel and Accommodations
             .songrequest.article
-              h1 Song Request
+              h1 Song Requests
+              hr
+              .container-fluid
+                .row
+                    .col-sm-12.col-md-10.col-md-offset-1
+                      form(action='/music' method='post' id='login_form')
+                        .panel.panel-default
+                          .panel-body
+                            .form-group
+                              label Email
+                              input.form-control(type='text' name='name' placeholder='Your Name')
+                            .form-group
+                              label Song Request
+                              input.form-control(type='text' name='request' placeholder='Please type name and artist' )
+                            button.btn.btn-success(type='submit') Submit
             .registry.article
               h1 Registry
+              hr
+              .row
+                .col-sm-12
+                  .thumbnail.hvr-glow
+                    a(href='http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542887716&pwsurl=' target='_blank')
+                      img(src='/images/registry/bedbathbeyond.jpg')
+                .col-sm-12
+                  .thumbnail.hvr-glow
+                    a(href='http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=3119190&viewtype=listview&isfromsearch=true&fname=katie&lname=minesinger&regtype=registry.wedding,registry.baby,registry.splday' target='_blank')
+                      img(src='/images/registry/kohls.jpg')
             .rsvp.article
               h1 RSVP
+              hr
+              h2.text-center Please check back later to RSVP to our wedding
 

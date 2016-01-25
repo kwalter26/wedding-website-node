@@ -15,6 +15,8 @@ var flash = require('connect-flash');
 
 var passport = require('passport');
 
+var nodemailer = require('nodemailer');
+
 
 // Initialize App
 var app = express();

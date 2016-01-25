@@ -2,6 +2,8 @@
 //var router = express.Router();
 var down = false;
 
+var nodemailer = require('nodemailer');
+
 
 module.exports = function(app,passport){
 
@@ -22,6 +24,34 @@ module.exports = function(app,passport){
   app.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
+  });
+
+  app.post('/music',isDown,isLoggedIn,function(req,res){
+    var transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+        user: 'kkwedding26@gmail.com', // Your email id
+        pass: 'Lola2008' // Your password
+      }
+    });
+
+    var mailOptions = {
+      from: 'kkwedding26@gmail.com', // sender address
+      to: 'kkwedding26@gmail.com', // list of receivers
+      subject: 'Song Request from ' + req.body.name, // Subject line
+      text: req.body.request //, // plaintext body
+      // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
+    };
+
+    transporter.sendMail(mailOptions,function(error,info){
+      if(error){
+        console.log(error);
+        res.redirect('/');
+      }else{
+        console.log('Message sent: ' + info.response);
+        res.redirect('/');
+      };
+    })
   });
 
   //app.get('/signup',function(req,res,next){
