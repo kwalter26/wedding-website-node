@@ -70,10 +70,13 @@ function weddingController($scope) {
             $('#main-content').fadeOut('fast',function(){
                 $('.article').fadeOut('fast');
                 $('.' + link).fadeIn('fast',function(){
-                    $('#main-content').fadeIn('fast');
+                    $('#main-content').fadeIn('fast',function(){
+                        resize();
+                    });
                 });
             });
         });
+
 
 
 
