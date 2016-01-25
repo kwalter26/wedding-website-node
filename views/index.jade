@@ -6,7 +6,7 @@ block content
   .main-content
     .container-fluid
       .row
-        .col-md-4.hidden-sm
+        .col-md-4.hidden-sm.fixedthing
           .panel.panel-default.section(id='main-menu')
             h1.resizable.text-center Katie & Kyle
             br
@@ -32,7 +32,7 @@ block content
                 a.resizable(id='registry-link' href='#' ng-click='getRegistry()') Registry
               li.h2.menu-link
                 a.resizable(id='rsvp-link' href='#' ng-click='getRSVP()') RSVP
-        .col-md-8
+        .col-md-8.col-md-offset-4
           .panel.panel-default.section(id='main-content' )
             .ourstory.article
               h1 Our Story
@@ -52,6 +52,70 @@ block content
                 | fishing, or inside cooking and watching Game of Thrones.
             .weddingparty.article
               h1 Wedding Party
+              hr
+              .row
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/anelise.jpg')
+                    .caption
+                      h3 Maid of Honor
+                      h4 Anelise Imig
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/megan.jpg')
+                    .caption
+                      h3 Bridesmaid
+                      h4 Megan Eastman
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/laura.jpg')
+                    .caption
+                      h3 Bridesmaid
+                      h4 Laura McElheny
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/stephanie.jpg')
+                    .caption
+                      h3 Bridesmaid
+                      h4 Stephanie Walter
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/lisa.jpg')
+                    .caption
+                      h3 Bridesmaid
+                      h4 Lisa Walter
+              .row
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/tanner.jpg')
+                    .caption
+                      h3 Best Man
+                      h4 Tanner Ridings
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/mark.jpg')
+                    .caption
+                      h3 Groomsmen
+                      h4 Mark Anderson
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/mike.jpg')
+                    .caption
+                      h3 Groomsmen
+                      h4 Mike Higgs
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/zach.jpg')
+                    .caption
+                      h3 Groomsmen
+                      h4 Zach Swint
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    img(src='/images/weddingparty/randy.jpg')
+                    .caption
+                      h3 Groomsmen
+                      h4 Randy Eanos
+
             .thewedding.article
               h1 The Wedding
             .travel.article

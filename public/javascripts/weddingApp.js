@@ -82,6 +82,17 @@ function weddingController($scope) {
     }
     function resize(){
         updateRatio();
+
+        var contentSize = $('#main-content').height();
+        console.log(contentSize);
+        console.log(screenHeight);
+
+        if(contentSize > screenHeight){
+            $('body').css('overflow-y','visible');
+        }else{
+            $('body').css('overflow-y','hidden');
+        }
+
         $('.background').height(screenHeight);
 
         $('h1.resizable').css('font-size',(70 * screenRatio) + "px"); // Title
