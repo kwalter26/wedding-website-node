@@ -3,10 +3,22 @@ extends layout
 block content
   .main.background.in
   .background.out
+  nav.navmenu.navmenu-inverted.navmenu-fixed-left.offcanvas(id='mobileNav' role='navigation')
+    a.navmenu-brand(href='#') Katie & Kyle
+    ul.nav.navmenu-nav
+      li
+        a(href='#' ng-click='getHome()') Home
+      li
+        a(href='#' ng-click='getOurStory()') Our Story
+
+
+  .navbar.navbar-inverse.navbar-fixed-top.hidden-md.hidden-lg
+    button.btn.btn-default.navbar-btn.navbar-left(type='button' data-toggle='offcanvas' data-target='#mobileNav' data-canvas='body')
+      span.glyphicon.glyphicon-menu-hamburger(aria-hidden='true')
   .main-content
     .container-fluid
       .row
-        .col-md-4.hidden-sm.fixedthing
+        .col-md-4.hidden-sm.hidden-xs.fixedthing
           .panel.panel-default.section(id='main-menu')
             h1.resizable.text-center Katie & Kyle
             br
@@ -14,7 +26,7 @@ block content
             h2.resizable.text-center(id='menu-location') Morton, Illinois
             br
             h4.resizable.text-center(id='menu-paragraph')  welcome to our wedding website!
-            hr
+            hr.resizable-hr
             ul
               li.h2.menu-link
                 a.resizable(id='home-link' href='#' ng-click='getHome()') Home
@@ -32,21 +44,33 @@ block content
                 a.resizable(id='registry-link' href='#' ng-click='getRegistry()') Registry
               li.h2.menu-link
                 a.resizable(id='rsvp-link' href='#' ng-click='getRSVP()') RSVP
+              li.h2.menu-link
+                a.resizable(id='contact-link' href='#' ng-click='getContact()') Contact
+            hr.resizable-hr
+            p.resizable.photoCred.text-center Photos courtesy of Meredith Washburn
+            p.resizable.photoCred.text-center http://www.meredithwashburn.com
+
+
+        // Main content ===============================================================
         .col-md-8.col-md-offset-4
-          .panel.panel-default.section(id='main-content' )
+          .section(id='main-content' )
+            .home.article
+              h1.text-center Count Down to Wedding
+              hr
+              h1.text-center(id='countDown')
             .ourstory.article
               h1 Our Story
               hr
               p Katie and Kyle started "dating" in jr. high on May 26th, 2008 during their 8th Grade trip to Washington D.C.&nbsp;
-                img(id='firstPic' src='/images/ourstory/firstPic.JPG' height='200px')
+                img(id='firstPic' src='/images/ourstory/firstPic.JPG' height='200px' ng-click='picModal($event)')
                 | Kyle was drawn to Katie's grace and poise when she walked into a sign while talking to him at the airport, and Katie was charmed when Kyle first texted her a poop emoji.
                 | Their relationship continued to grow after starting high school. Together they stayed busy excelling in classes, playing sports, and&nbsp;
-                img(id='prom' src='/images/ourstory/prom.jpg' height='200px')
+                img(id='prom' src='/images/ourstory/prom.jpg' height='200px' ng-click='picModal($event)')
                 | volunteering. They also enjoyed playing together in orchestra and attending homecomings and proms. In 2012, Kyle and Katie graduated from Morton High School and parted ways as Kyle went to
                 | Southern Illinois University in Carbondale, and Katie attended the University of Illinois in Urbana-Champaign. They have&nbsp;
-                img(id='grad' src='images/ourstory/grad.JPG' height='200px')
+                img(id='grad' src='images/ourstory/grad.JPG' height='200px' ng-click='picModal($event)')
                 | maintained their long distance relationship with many skype dates and silly snapchats. In May of 2016, Kyle will graduate with a&nbsp;
-                img(id='hiking' src='images/ourstory/hiking.JPG' height='200px')
+                img(id='hiking' src='images/ourstory/hiking.JPG' height='200px' ng-click='picModal($event)')
                 | bachelor's in Computer Science, and Katie will graduate with a bachelor's in Food Science and Human Nutrition with a concentration in Dietetics. Kyle plans to start working as a computer programmer,
                 | while Katie will continue her education with graduate school and the dietetic internship, working toward becoming a dietitian. In their free time, the couple can be found outside hiking, camping, and
                 | fishing, or inside cooking and watching Game of Thrones.
@@ -100,13 +124,13 @@ block content
                       h4 Mark Anderson
                 .col-sm-6.col-md-4
                   .thumbnail
-                    img(src='/images/weddingparty/mike.jpg')
+                    img(src='/images/weddingparty/mike2.jpg')
                     .caption
                       h3 Groomsman
                       h4 Mike Higgs
                 .col-sm-6.col-md-4
                   .thumbnail
-                    img(src='/images/weddingparty/zach.jpg')
+                    img(src='/images/weddingparty/zach2.jpg')
                     .caption
                       h3 Groomsman
                       h4 Zach Swint
@@ -128,9 +152,60 @@ block content
             .thewedding.article
               h1 The Wedding
               hr
+              h2 Ceremony
+              p Our ceremony will be held at Blessed Sacrament Church in Morton and will start tentatively at 2:00PM CST.
+              .row
+                .col-sm-12
+                  .thumbnail.hvr-glow
+                    a(href='http://bscmorton.org/' target='_blank')
+                      img(id='church' src='images/places/church.png' height='200px')
+              p 225 East Greenwood Street, Morton, Illinois 61550
+              br
+              br
+              h2 Reception
+              p Our reception will be held at Metamora Fields Golf Club in Metamora and will start tentatively at 4:00PM CST.
+              .row
+                .col-sm-12
+                  .thumbnail.hvr-glow
+                    a(href='http://www.metamorafields.com/' target='_blank')
+                      img(id='reception' src='images/places/reception.jpg' height='200px')
+              p 801 Progress Street, Metamora,Illinois 61548
+
 
             .travel.article
               h1 Travel and Accommodations
+              hr
+              p To our out-of-town guests, we are so honored that you are making the trip to share our special day with us. Please find information below regarding hotel blocks.
+              //br
+              //h2 Flight Information:
+              //br
+              //br
+              br
+              h2 Embassy Suites East Peoria
+              p 100 Conference Center Drive, East Peoria, Illinois 61611
+              .row
+                .col-sm-12
+                  .thumbnail.hvr-glow
+                    a(href='http://embassysuites3.hilton.com/en/hotels/illinois/embassy-suites-by-hilton-east-peoria-riverfront-hotel-and-conference-center-PIAESES/maps-directions/index.html' target='_blank')
+                      img(id='embassy' src='images/places/embassy.jpg' height='200px')
+
+              br
+              p Please book before Friday, June 17th at 5:00PM CST to receive the following discounted rates:
+              p $129.00 for a Two Room King Suite
+              p $139.00 for a Two Room Suite with Double Beds
+              br
+              p Call 1-800-EMBASSY or 1-309-694-0200 to book reservations, and remember to mention the Minesinger/Walter Wedding Block to receive the special rate.
+              br
+              br
+              br
+              h2 Hampton Inn East Peoria
+              p 11 Winners Way, East Peoria, Illinois, 61611
+              .row
+                .col-sm-12
+                  .thumbnail.hvr-glow
+                    a(href='http://hamptoninn3.hilton.com/en/hotels/illinois/hampton-inn-peoria-east-at-the-river-boat-crossing-PIAEAHX/maps-directions/index.html' target='_blank')
+                      img(id='hampton' src='images/places/hampton.jpg' height='200px')
+
             .songrequest.article
               h1 Song Requests
               hr
@@ -141,15 +216,22 @@ block content
                         .panel.panel-default
                           .panel-body
                             .form-group
-                              label Email
+                              label Name
                               input.form-control(type='text' name='name' placeholder='Your Name')
                             .form-group
-                              label Song Request
-                              input.form-control(type='text' name='request' placeholder='Please type name and artist' )
+                              label Song Request #1
+                              input.form-control(type='text' name='requestOne' placeholder='Artist / Song Title' )
+                            .form-group
+                              label Song Request #2
+                              input.form-control(type='text' name='requestTwo' placeholder='Artist / Song Title' )
+                            .form-group
+                              label Song Request #3
+                              input.form-control(type='text' name='requestThree' placeholder='Artist / Song Title' )
                             button.btn.btn-success(type='submit') Submit
             .registry.article
               h1 Registry
               hr
+              p Please find links below to our wedding registries at the following retail stores:
               .row
                 .col-sm-12
                   .thumbnail.hvr-glow
@@ -162,5 +244,32 @@ block content
             .rsvp.article
               h1 RSVP
               hr
-              h2.text-center Please check back later to RSVP to our wedding
-
+              h2.text-center Please check back later to RSVP to our wedding!
+            .contact.article
+              h1 Contact
+              hr
+              h2 Need some information or have a question regarding the wedding? Feel free to call, email, or submit the form below anytime, and Katie or Kyle will respond as soon as we can.
+              ul
+                li Kyle Cell:   309-256-1403
+                li Katie Cell:  309-258-6534
+                li Email:       kkwedding26@gmail.com
+              form(action='/contact' method='post' id='contact-form')
+                .panel.panel-default
+                  .panel-body
+                    .form-group
+                      label Name
+                      input.form-control(type='text' name='name' placeholder='Your Name')
+                    .form-group
+                      label Email
+                      input.form-control(type='email' name='email' placeholder='Email')
+                    .form-group
+                      label Question
+                      textarea.form-control(rows='3' name='question' placeholder='Question')
+                    button.btn.btn-success(type='submit') Submit
+  .modal.fade(id='picModal' tabindex='1' role='dialog')
+    .modal-dialog
+      .modal-content
+        .model-body
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') &times;
+          img(id='modalImg')
