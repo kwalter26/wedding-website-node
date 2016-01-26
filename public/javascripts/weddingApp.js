@@ -9,12 +9,14 @@ function weddingController($scope) {
 
 
     // Clock count down
-    var clock = $('#countDown');
     var targetDate = new Date(2016,06,9);
-    clock.text(countdown(targetDate).seconds);
     setInterval(function(){
         var d = countdown(targetDate)
-        clock.text(d.months + ':' + d.days + ':' + d.hours + ':' + d.minutes + ':' + d.seconds);
+        $('.month').text(d.months);
+        $('.day').text(d.days);
+        $('.hour').text(d.hours);
+        $('.min').text(d.minutes);
+        $('.sec').text(d.seconds);
     },1000);
 
     // Set background height to full screen ==============

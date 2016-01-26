@@ -55,11 +55,36 @@ block content
         .col-md-8.col-md-offset-4
           .section(id='main-content' )
             .home.article
-              h1.text-center Count Down to Wedding
+              h1.content-title.text-center Count Down to Wedding
               hr
-              h1.text-center(id='countDown')
+              .row(id='#countDown')
+                .col-xs-2.col-xs-offset-1
+                  .countDown-label.text-center Months
+                  .panel.panel-default
+                    .panel-body
+                      h1.month.countDown-h1.text-center
+                .col-xs-2
+                  .countDown-label.text-center Days
+                  .panel.panel-default
+                    .panel-body
+                      h1.day.countDown-h1.text-center
+                .col-xs-2
+                  .countDown-label.text-center Hours
+                  .panel.panel-default
+                    .panel-body
+                      h1.hour.countDown-h1.text-center
+                .col-xs-2
+                  .countDown-label.text-center Minutes
+                  .panel.panel-default
+                    .panel-body
+                      h1.min.countDown-h1.text-center
+                .col-xs-2
+                  .countDown-label.text-center Seconds
+                  .panel.panel-default
+                    .panel-body
+                      h1.sec.countDown-h1.text-center
             .ourstory.article
-              h1 Our Story
+              h1.content-title Our Story
               hr
               p Katie and Kyle started "dating" in jr. high on May 26th, 2008 during their 8th Grade trip to Washington D.C.&nbsp;
                 img(id='firstPic' src='/images/ourstory/firstPic.JPG' height='200px' ng-click='picModal($event)')
@@ -75,7 +100,7 @@ block content
                 | while Katie will continue her education with graduate school and the dietetic internship, working toward becoming a dietitian. In their free time, the couple can be found outside hiking, camping, and
                 | fishing, or inside cooking and watching Game of Thrones.
             .weddingparty.article
-              h1 Wedding Party
+              h1.content-title Wedding Party
               hr
               .row
                 .col-sm-6.col-md-4
@@ -98,13 +123,13 @@ block content
                       h4 Laura McElheny
                 .col-sm-6.col-md-4
                   .thumbnail
-                    img(src='/images/weddingparty/stephanie.jpg')
+                    img(src='/images/weddingparty/stephanie2.jpg')
                     .caption
                       h3 Bridesmaid
                       h4 Stephanie Walter
                 .col-sm-6.col-md-4
                   .thumbnail
-                    img(src='/images/weddingparty/lisa.jpg')
+                    img(src='/images/weddingparty/lisa2.jpg')
                     .caption
                       h3 Bridesmaid
                       h4 Lisa Walter
@@ -150,7 +175,7 @@ block content
                       h4 Sydney
 
             .thewedding.article
-              h1 The Wedding
+              h1.content-title The Wedding
               hr
               h2 Ceremony
               p Our ceremony will be held at Blessed Sacrament Church in Morton and will start tentatively at 2:00PM CST.
@@ -173,9 +198,9 @@ block content
 
 
             .travel.article
-              h1 Travel and Accommodations
+              h1.content-title Travel and Accommodations
               hr
-              p To our out-of-town guests, we are so honored that you are making the trip to share our special day with us. Please find information below regarding hotel blocks.
+              p To our out-of-town guests, we are so honored that you are making the trip to share our special day with us. Please find information below regarding hotel blocks and click any picture to view the hotel website.
               //br
               //h2 Flight Information:
               //br
@@ -207,7 +232,7 @@ block content
                       img(id='hampton' src='images/places/hampton.jpg' height='200px')
 
             .songrequest.article
-              h1 Song Requests
+              h1.content-title Song Requests
               hr
               .container-fluid
                 .row
@@ -229,7 +254,7 @@ block content
                               input.form-control(type='text' name='requestThree' placeholder='Artist / Song Title' )
                             button.btn.btn-success(type='submit') Submit
             .registry.article
-              h1 Registry
+              h1.content-title Registry
               hr
               p Please find links below to our wedding registries at the following retail stores:
               .row
@@ -242,11 +267,11 @@ block content
                     a(href='http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=3119190&viewtype=listview&isfromsearch=true&fname=katie&lname=minesinger&regtype=registry.wedding,registry.baby,registry.splday' target='_blank')
                       img(src='/images/registry/kohls.jpg')
             .rsvp.article
-              h1 RSVP
+              h1.content-title RSVP
               hr
               h2.text-center Please check back later to RSVP to our wedding!
             .contact.article
-              h1 Contact
+              h1.content-title Contact
               hr
               h2 Need some information or have a question regarding the wedding? Feel free to call, email, or submit the form below anytime, and Katie or Kyle will respond as soon as we can.
               ul
