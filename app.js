@@ -1,56 +1,86 @@
-var express = require('express');
-var path = require('path');
-var mongoose = require('mongoose');
-var configDB = require('./config/database.js');
+///////////////////////////////////////////////////////////////////
+// Initialize Modules                                            //
+///////////////////////////////////////////////////////////////////
+  // Framework
+  var express = require('express');
+  var path = require('path');
+  var logger = require('morgan');
+  var cookieParser = require('cookie-parser');
+  var bodyParser = require('body-parser');
+
+  // Style and Icon
+  var favicon = require('serve-favicon');
+  var lessMiddleware = require('less-middleware');
+
+  // Database Setup
+  var mongoose = require('mongoose');
+  var configDB = require('./config/db/database.js');
+
+  // Authentication
+  var passport = require('passport');
+  var session = require('express-session');
+  var flash = require('connect-flash');
+
+  // Form Submissions
+  var nodemailer = require('nodemailer');
+
+  // Initialize App
+  var app = express();
+///////////////////////////////////////////////////////////////////
+// End Initialize Modules                                        //
+///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+// Database Setup                                                //
+///////////////////////////////////////////////////////////////////
+
+  // Start Mongoose
+  mongoose.connect(configDB.url,function(err){
+    if(err){
+      console.log(err);
+    }else{
+      console.log('Mongoose:      Connected to weddingsite database');
+
+      // Seed mongoose
+      require('./config/db/seeding');
+    }
+  });
+
+///////////////////////////////////////////////////////////////////
+// End Database Setup                                            //
+///////////////////////////////////////////////////////////////////
 
 
-var favicon = require('serve-favicon');
-var lessMiddleware = require('less-middleware');
+///////////////////////////////////////////////////////////////////
+//  Add modules to Express                                       //
+///////////////////////////////////////////////////////////////////
 
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var session = require('express-session');
-var flash = require('connect-flash');
-
-var passport = require('passport');
-
-var nodemailer = require('nodemailer');
-
-
-// Initialize App
-var app = express();
-
-
-
-// Connect to database
-mongoose.connect(configDB.url,function(err){
-  if(err){
-    console.log(err);
-  }else{
-    console.log('connected');
-  }
-});
-
-// view engine setup
+// View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// uncomment after placing your favicon in /public
+// Icon and style setup
 app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(lessMiddleware(__dirname + '/public'));
+
+// Express utilities
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(lessMiddleware(__dirname + '/public'));
 
-// Passport
+// Passport setup
 app.use(session({secret:'thisisasuperdupersecret'}))
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
+
 require('./config/passport')(passport); // pass passport for configuration
+
+///////////////////////////////////////////////////////////////////
+//  End Add modules to Express                                   //
+///////////////////////////////////////////////////////////////////
 
 // Routes
 require('./routes/index')(app,passport);

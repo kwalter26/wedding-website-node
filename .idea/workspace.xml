@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92b7d2a5-1dcd-422d-9baf-a065db58db62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/adminlogin.jade" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/Kyle_Katie_Engagement-53.jpg" afterPath="" />
+    <list default="true" id="92b7d2a5-1dcd-422d-9baf-a065db58db62" name="Default" comment="Added admin tools page&#10;Added style to countdown headers">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/db/seeding.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/database.js" afterPath="$PROJECT_DIR$/config/db/database.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/passport.js" afterPath="$PROJECT_DIR$/config/passport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/weddingApp.js" afterPath="$PROJECT_DIR$/public/javascripts/weddingApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/pages.less" afterPath="$PROJECT_DIR$/public/stylesheets/pages.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
     </list>
     <ignored path="wedding-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +32,18 @@
           <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.6666665">
-                  <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+                <state vertical-scroll-proportion="-74.92593">
+                  <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/db/database.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -63,47 +69,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pages.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="pages.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/stylesheets/pages.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4204947">
+                <state vertical-scroll-proportion="-9.153846">
                   <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fonts.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/stylesheets/fonts.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.884615">
-                  <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/routes/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+                <state vertical-scroll-proportion="1.2820946">
+                  <caret line="154" column="5" selection-start-line="129" selection-start-column="2" selection-end-line="154" selection-end-column="5" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#1046#1969#0" expanded="false" />
                     <element signature="e#2029#2859#0" expanded="false" />
                     <element signature="n#!!block;n#isLoggedIn#0" expanded="false" />
-                    <element signature="n#!!block;n#recordHit#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -159,11 +144,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="passport.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="passport.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/passport.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.5608108">
-                  <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -175,6 +160,30 @@
                 <state vertical-scroll-proportion="0.0">
                   <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6587838">
+                  <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="seeding.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/db/seeding.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#47#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -200,7 +209,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="6ee96003bf556a10300ed1c0db15d81f65c67c6d" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -217,7 +226,6 @@
         <option value="$PROJECT_DIR$/views/weddingparty.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/main.js" />
         <option value="$PROJECT_DIR$/views/down.jade" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/special.less" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
@@ -225,10 +233,12 @@
         <option value="$PROJECT_DIR$/models/data.js" />
         <option value="$PROJECT_DIR$/views/adminlogin.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/weddingApp.js" />
-        <option value="$PROJECT_DIR$/config/passport.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/pages.less" />
+        <option value="$PROJECT_DIR$/config/passport.js" />
+        <option value="$PROJECT_DIR$/config/db/seeding.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -387,6 +397,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -411,6 +439,7 @@
       <recent name="C:\Projects\wedding-website\public\images\ourstory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\wedding-website\config\db" />
       <recent name="C:\Projects\wedding-website\public" />
     </key>
   </component>
@@ -587,7 +616,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453859898357</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added admin tools page&#10;Added style to countdown headers">
+      <created>1453869870692</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1453869870692</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -646,7 +681,8 @@
     <MESSAGE value="Update countdown style and added new pictures of sisters" />
     <MESSAGE value="Added files that I forgot to add&#10;" />
     <MESSAGE value="Added hit counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added hit counter" />
+    <MESSAGE value="Added admin tools page&#10;Added style to countdown headers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added admin tools page&#10;Added style to countdown headers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -655,20 +691,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1046#1969#0" expanded="false" />
-            <element signature="e#2029#2859#0" expanded="false" />
-            <element signature="n#!!block;n#isLoggedIn#0" expanded="false" />
-            <element signature="n#!!block;n#recordHit#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -738,7 +760,6 @@
             <element signature="e#1046#1969#0" expanded="false" />
             <element signature="e#2029#2859#0" expanded="false" />
             <element signature="n#!!block;n#isLoggedIn#0" expanded="false" />
-            <element signature="n#!!block;n#recordHit#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -781,7 +802,6 @@
             <element signature="e#1046#1969#0" expanded="false" />
             <element signature="e#2029#2859#0" expanded="false" />
             <element signature="n#!!block;n#isLoggedIn#0" expanded="false" />
-            <element signature="n#!!block;n#recordHit#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -958,22 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14604811">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -982,28 +986,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/adminlogin.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5608108">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1046,33 +1032,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/pages.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        <state vertical-scroll-proportion="-74.92593">
+          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        <state vertical-scroll-proportion="1.2820946">
+          <caret line="154" column="5" selection-start-line="129" selection-start-column="2" selection-end-line="154" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1046#1969#0" expanded="false" />
             <element signature="e#2029#2859#0" expanded="false" />
             <element signature="n#!!block;n#isLoggedIn#0" expanded="false" />
-            <element signature="n#!!block;n#recordHit#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/pages.less">
+    <entry file="file://$PROJECT_DIR$/config/db/seeding.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4204947">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6587838">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
