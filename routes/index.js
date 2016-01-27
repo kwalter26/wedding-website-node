@@ -3,6 +3,7 @@
 var down = false;
 
 var nodemailer = require('nodemailer');
+var Data = require('../models/data');
 
 
 module.exports = function(app,passport){
@@ -15,7 +16,7 @@ module.exports = function(app,passport){
     res.render('login',{title:'Join the Adventure',message: req.flash('loginMessage')});
   });
 
-  app.post('/login',isDown, passport.authenticate('local-login', {
+  app.post('/login',isDown, recordHit, passport.authenticate('local-login', {
     successRedirect : '/', // redirect to the secure profile section
     failureRedirect : '/login', // redirect back to the signup page if there is an error
     failureFlash : true // allow flash messages
@@ -53,7 +54,6 @@ module.exports = function(app,passport){
       };
     })
   });
-
   app.post('/contact',isDown,isLoggedIn,function(req,res){
     var transporter = nodemailer.createTransport({
       service: 'Gmail',
@@ -107,10 +107,39 @@ function isLoggedIn(req, res, next) {
   // if they aren't redirect them to the home page
   res.redirect('/login');
 }
-
 function isDown(req, res, next){
   if(!down){
     return next();
   }
   res.redirect('/down')
+}
+function recordHit(req,res,next){
+  Data.findOne({'name' : 'main'},function(err, data){
+    if (err)
+      return done(err);
+
+    if(!data){
+      var newMainData = new Data();
+
+      newMainData.name = 'main';
+      newMainData.hits = 1;
+      newMainData.down = false;
+
+      newMainData.save(function(err){
+        if(err)
+          throw err;
+        console.log('main data created');
+      })
+    }else{
+      data.hits += 1;
+      data.save(function(err){
+        if(err)
+          throw err;
+        console.log('Hit Counted');
+      })
+    }
+    return next();
+
+
+  });
 }
