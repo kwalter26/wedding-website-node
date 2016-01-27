@@ -46,6 +46,9 @@ block content
                 a.resizable(id='rsvp-link' href='#' ng-click='getRSVP()') RSVP
               li.h2.menu-link
                 a.resizable(id='contact-link' href='#' ng-click='getContact()') Contact
+              - if(admin == true)
+                li.h2.menu-link
+                  a.resizable(id='admin-link' href='#' ng-click='getAdmin()') Admin Tools
             hr.resizable-hr
             p.resizable.photoCred.text-center Photos courtesy of Meredith Washburn
             p.resizable.photoCred.text-center http://www.meredithwashburn.com
@@ -59,27 +62,27 @@ block content
               hr
               .row(id='#countDown')
                 .col-xs-2.col-xs-offset-1
-                  .countDown-label.text-center Months
+                  .countDown-label.text-center {months}
                   .panel.panel-default
                     .panel-body
                       h1.month.countDown-h1.text-center
                 .col-xs-2
-                  .countDown-label.text-center Days
+                  .countDown-label.text-center {days}
                   .panel.panel-default
                     .panel-body
                       h1.day.countDown-h1.text-center
                 .col-xs-2
-                  .countDown-label.text-center Hours
+                  .countDown-label.text-center {hours}
                   .panel.panel-default
                     .panel-body
                       h1.hour.countDown-h1.text-center
                 .col-xs-2
-                  .countDown-label.text-center Minutes
+                  .countDown-label.text-center {minutes}
                   .panel.panel-default
                     .panel-body
                       h1.min.countDown-h1.text-center
                 .col-xs-2
-                  .countDown-label.text-center Seconds
+                  .countDown-label.text-center {seconds}
                   .panel.panel-default
                     .panel-body
                       h1.sec.countDown-h1.text-center
@@ -291,6 +294,13 @@ block content
                       label Question
                       textarea.form-control(rows='3' name='question' placeholder='Question')
                     button.btn.btn-success(type='submit') Submit
+          - if(admin == true)
+            .admintools.article
+              h1.content-title Admin Tools
+              hr
+              h2= hits
+              h2= down
+
   .modal.fade(id='picModal' tabindex='1' role='dialog')
     .modal-dialog
       .modal-content

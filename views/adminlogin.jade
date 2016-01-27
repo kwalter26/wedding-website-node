@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .login.background.in
+    .main-content
+        .container-fluid
+            .row
+                .Absolute-Center.is-Responsive
+                    .col-sm-12.col-md-10.col-md-offset-1
+                        form(action='/login' method='post' id='login_form')
+                            .panel.panel-default
+                                .panel-body
+                                    h1.text-center.title= title
+                                    - if(message.length > 0)
+                                        .alert.alert-danger= message
+                                    .form-group
+                                        label Username
+                                        input.form-control(type='text' name='username' placeholder='Username')
+                                    .form-group
+                                        label Password
+                                        input.form-control(type='password' name='password' placeholder='Password' )
+                                    button.btn.btn-success(type='submit') Login
+
+

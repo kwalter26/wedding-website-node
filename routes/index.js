@@ -22,6 +22,10 @@ module.exports = function(app,passport){
     failureFlash : true // allow flash messages
   }));
 
+  app.get('/adminlogin',function(req,res,next){
+    res.render('adminlogin',{title:'Join the Adventure', message: req.flash('loginMessage')});
+  });
+
   app.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
@@ -82,18 +86,27 @@ module.exports = function(app,passport){
     })
   });
 
-  //app.get('/signup',function(req,res,next){
-  //  res.render('signup', { message: req.flash('signupMessage') });
-  //});
-
-  //app.post('/signup', passport.authenticate('local-signup', {
-  //  successRedirect : '/', // redirect to the secure profile section
-  //  failureRedirect : '/signup', // redirect back to the signup page if there is an error
-  //  failureFlash : true // allow flash messages
-  //}));
-
   app.get('/*',isDown,isLoggedIn,function(req,res,next){
-    res.render('index',{title:'Katie and Kyle Walk Down the Aisle'});
+    var user = req.user.local;
+    if(user.admin){
+    Data.findOne({'name' : 'main'},function(err, data) {
+      if (err)
+        return done(err);
+      if (data) {
+        res.render('index', {
+          title: 'Katie and Kyle Walk Down the Aisle',
+          hits: data.hits,
+          down: data.down,
+          admin: user.admin
+        });
+      }
+    });
+    }else{
+        res.render('index',{
+          title: 'Katie and Kyle Walk Down the Aisle',
+          admin: req.session.admin
+        });
+    }
   });
 
 }
@@ -139,7 +152,5 @@ function recordHit(req,res,next){
       })
     }
     return next();
-
-
   });
 }

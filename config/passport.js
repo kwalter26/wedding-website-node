@@ -6,6 +6,35 @@ var LocalStrategy   = require('passport-local').Strategy;
 // load up the user model
 var User            = require('../models/user');
 
+User.findOne({ 'local.username' :  'Guest' }, function(err, user){
+    if (err)
+        return done(err);
+    if(!user){
+        var newUser = new User();
+        newUser.local.username = 'Guest';
+        newUser.local.password = newUser.generateHash('nashville');
+        newUser.local.admin = false;
+        newUser.save(function(err) {
+        if (err)
+            throw err;
+        });
+    }
+});
+User.findOne({ 'local.username' :  'Admin' }, function(err, user){
+    if (err)
+        return done(err);
+    if(!user){
+        var newUser = new User();
+        newUser.local.username = 'Admin';
+        newUser.local.password = newUser.generateHash('General Jackson');
+        newUser.local.admin = true;
+        newUser.save(function(err) {
+        if (err)
+            throw err;
+        });
+    }
+});
+
 // expose this function to our app using module.exports
 module.exports = function(passport) {
 
@@ -55,8 +84,8 @@ module.exports = function(passport) {
 
                         // set the user's local credentials
                         newUser.local.username    = username;
-                        newUser.local.password = newUser.generateHash(password);
-                        newUser.local.admin = false;
+                        newUser.local.password    = newUser.generateHash(password);
+                        newUser.local.admin       = false;
 
                         // save the user
                         newUser.save(function(err) {
@@ -85,7 +114,9 @@ module.exports = function(passport) {
             passReqToCallback : true // allows us to pass back the entire request to the callback
         },
         function(req, username, password, done) { // callback with email and password from our form
-            username = 'Guest';
+            if(username != 'Admin'){
+                username = 'Guest';
+            }
             User.findOne({ 'local.username' :  username }, function(err, user) {
                 if (err)
                     return done(err);

@@ -64,6 +64,9 @@ function weddingController($scope) {
     };
     $scope.getContact = function(){
         switchContent('contact',53)
+    };
+    $scope.getAdmin = function(){
+        switchContent('admintools',53);
     }
 
     // Registry Links
