@@ -8,9 +8,9 @@ var Data = require('../models/data');
 
 module.exports = function(app,passport){
 
-  app.get('/down',function(req,res,next){
-    res.render('down',{title:'Down For Maintenance'});
-  })
+  //app.get('/down',function()
+  //  res.render('down',{title:'Down For Maintenance'});
+  //});
 
   app.get('/login',isDown,function(req,res,next){
     res.render('login',{title:'Join the Adventure',message: req.flash('loginMessage')});
