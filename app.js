@@ -62,7 +62,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Passport setup
-app.use(session({secret:'thisisasuperdupersecret'}))
+app.use(session({secret:'thisisasuperdupersecret',cookie:{_expires:60000}}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
