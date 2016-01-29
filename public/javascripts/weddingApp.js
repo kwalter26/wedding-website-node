@@ -1,12 +1,15 @@
 var weddingApp = angular.module('weddingApp', []);
 
-function weddingController($scope) {
+function weddingController($scope,$http) {
 
     // Initialize local variables ========================
     var screenHeight = $(window).height();
     var screenRatio = 1;
     var minScreenHeight = 662;
 
+    // Initialize app page variables
+    $scope.hits = '0';
+    $scope.down = 'false';
 
     // Clock count down
     var targetDate = new Date(2016,06,9);
@@ -66,7 +69,16 @@ function weddingController($scope) {
         switchContent('contact',53)
     };
     $scope.getAdmin = function(){
+        $http.get('/api/data')
+            .success(function(data){
+                console.log(data);
+                $scope.hits = data.hits;
+                $scope.down = data.down;
+            }).error(function(data){
+                console.log(data);
+            });
         switchContent('admintools',53);
+
     }
 
     // Registry Links

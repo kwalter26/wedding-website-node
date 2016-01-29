@@ -240,7 +240,7 @@ block content
               .container-fluid
                 .row
                     .col-sm-12.col-md-10.col-md-offset-1
-                      form(action='/music' method='post' id='login_form')
+                      form(action='/api/music/new' method='post' id='login_form')
                         .panel.panel-default
                           .panel-body
                             .form-group
@@ -298,8 +298,8 @@ block content
             .admintools.article
               h1.content-title Admin Tools
               hr
-              h2= hits
-              h2= down
+              h2 Hits: {{ hits }}
+              h2 Down: {{ down }}
 
   .modal.fade(id='picModal' tabindex='1' role='dialog')
     .modal-dialog
