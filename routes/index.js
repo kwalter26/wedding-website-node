@@ -32,7 +32,7 @@ module.exports = function(app,passport) {
     res.render('adminlogin', {title: 'Join the Adventure', message: req.flash('loginMessage')});
   });
 
-  app.post('/adminlogin', isDown, passport.authenticate('local-login', {
+  app.post('/adminlogin', passport.authenticate('local-login', {
     successRedirect: '/home', // redirect to the secure profile section
     failureRedirect: '/adminlogin', // redirect back to the signup page if there is an error
     failureFlash: true // allow flash messages
@@ -44,11 +44,14 @@ module.exports = function(app,passport) {
   });
 
   app.get('/home', isDown, isLoggedIn, function (req, res, next) {
-    console.log(req.user.local.admin);
     res.render('index', {
       title: 'Katie and Kyle Walk Down the Aisle',
       admin: req.user.local.admin
     });
+  });
+
+  app.get('/down',function(req,res,next){
+    res.render('down');
   });
 
   app.get('/*', isDown, isLoggedIn, function(req,res,next){
@@ -67,11 +70,17 @@ module.exports = function(app,passport) {
     res.redirect('/login');
   }
   function isDown(req, res, next) {
+    var admin = false;
+    console.log(req.session);
+    if(req.hasOwnProperty('user'))
+      admin = true;
+
     Data.findOne({'name': 'main'}, function (err, data) {
       if (err)
         return done(err);
       if (data) {
-        if(data.down && !req.user.admin){
+        if(data.down && !admin){
+
           res.redirect('/down')
         }
       }

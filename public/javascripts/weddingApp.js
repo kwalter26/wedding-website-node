@@ -9,7 +9,7 @@ function weddingController($scope,$http) {
 
     // Initialize app page variables
     $scope.hits = '0';
-    $scope.down = 'false';
+    $scope.status = 'up';
 
     // Clock count down
     var targetDate = new Date(2016,06,9);
@@ -73,12 +73,35 @@ function weddingController($scope,$http) {
             .success(function(data){
                 console.log(data);
                 $scope.hits = data.hits;
-                $scope.down = data.down;
+                if(data.down)
+                    $scope.status = 'down';
+                else
+                    $scope.status = 'up';
             }).error(function(data){
                 console.log(data);
             });
         switchContent('admintools',53);
 
+    }
+
+    $scope.toggleStatus = function(){
+        $http.post('/api/data/update')
+            .success(function(data){
+
+            }).error(function(data){
+
+            });
+        $http.get('/api/data')
+            .success(function(data){
+                console.log(data);
+                $scope.hits = data.hits;
+                if(data.down)
+                    $scope.status = 'down';
+                else
+                    $scope.status = 'up';
+            }).error(function(data){
+            console.log(data);
+        });
     }
 
     // Registry Links

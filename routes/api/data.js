@@ -17,6 +17,20 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.post('/update',function(req,res,next){
+   Data.findOne({name:'main'},function(err,data){
+       if(err)
+        return done(err);
+       if(data){
+           data.hits = data.hits;
+           data.down = !data.down;
+           data.save();
+       }
+   })
+
+
+});
+
 module.exports =  router;
 
 

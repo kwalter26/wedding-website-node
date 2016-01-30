@@ -157,8 +157,9 @@ block content
                       h3 Groomsman
                       h4 Mike Higgs
                 .col-sm-6.col-md-4
-                  .thumbnail
-                    img(src='/images/weddingparty/zach2.jpg')
+                  .thumbnail.hvr-glow
+                    a(target='_blank' href='https://www.facebook.com/zachary.swint?fref=ts')
+                      img(src='/images/weddingparty/zach2.jpg')
                     .caption
                       h3 Groomsman
                       h4 Zach Swint
@@ -248,13 +249,13 @@ block content
                               input.form-control(type='text' name='name' placeholder='Your Name')
                             .form-group
                               label Song Request #1
-                              input.form-control(type='text' name='requestOne' placeholder='Artist / Song Title' )
+                              input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
                             .form-group
                               label Song Request #2
-                              input.form-control(type='text' name='requestTwo' placeholder='Artist / Song Title' )
+                              input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
                             .form-group
                               label Song Request #3
-                              input.form-control(type='text' name='requestThree' placeholder='Artist / Song Title' )
+                              input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
                             button.btn.btn-success(type='submit') Submit
             .registry.article
               h1.content-title Registry
@@ -294,12 +295,13 @@ block content
                       label Question
                       textarea.form-control(rows='3' name='question' placeholder='Question')
                     button.btn.btn-success(type='submit') Submit
-          - if(admin == true)
-            .admintools.article
-              h1.content-title Admin Tools
-              hr
-              h2 Hits: {{ hits }}
-              h2 Down: {{ down }}
+            - if(admin == true)
+              .admintools.article
+                h1.content-title Admin Tools
+                hr
+                h2 Hits: {{ hits }}
+                h2 Status:&nbsp;
+                  button.btn(ng-click='toggleStatus()') {{ status }}
 
   .modal.fade(id='picModal' tabindex='1' role='dialog')
     .modal-dialog
