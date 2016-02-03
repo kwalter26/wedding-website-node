@@ -40,7 +40,7 @@ module.exports = function(app,passport) {
 
   app.get('/logout', function (req, res) {
     req.logout();
-    res.redirect('/');
+    res.redirect('/login');
   });
 
   app.get('/home', isDown, isLoggedIn, function (req, res, next) {
@@ -71,16 +71,14 @@ module.exports = function(app,passport) {
   }
   function isDown(req, res, next) {
     var admin = false;
-    console.log(req.session);
     if(req.hasOwnProperty('user'))
-      admin = true;
+      var admin = req.user.local.admin;
 
     Data.findOne({'name': 'main'}, function (err, data) {
       if (err)
         return done(err);
       if (data) {
         if(data.down && !admin){
-
           res.redirect('/down')
         }
       }
