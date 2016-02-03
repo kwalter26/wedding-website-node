@@ -49,12 +49,22 @@ router.post('/new',function(req,res){
     transporter.sendMail(mailOptions,function(error,info){
         if(error){
             console.log(error);
-            res.redirect('/');
+            res.redirect('/home');
         }else{
             console.log('Message sent: ' + info.response);
-            res.redirect('/');
+            res.redirect('/home');
         };
     })
+});
+
+router.get('/',function(req,res,next){
+   Music.find({},function(err, music){
+        if(err)
+            return err;
+        if(music){
+            res.json(music);
+        }
+    });
 });
 
 module.exports = router;
