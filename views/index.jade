@@ -3,18 +3,18 @@ extends layout
 block content
   .main.background.in
   .background.out
-  nav.navmenu.navmenu-inverted.navmenu-fixed-left.offcanvas(id='mobileNav' role='navigation')
-    a.navmenu-brand(href='#') Katie & Kyle
-    ul.nav.navmenu-nav
-      li
-        a(href='#' ng-click='getHome()') Home
-      li
-        a(href='#' ng-click='getOurStory()') Our Story
+  //nav.navmenu.navmenu-inverted.navmenu-fixed-left.offcanvas(id='mobileNav' role='navigation')
+  //  a.navmenu-brand(href='#') Katie & Kyle
+  //  ul.nav.navmenu-nav
+  //    li
+  //      a(href='#' ng-click='getHome()') Home
+  //    li
+  //      a(href='#' ng-click='getOurStory()') Our Story
 
 
-  .navbar.navbar-inverse.navbar-fixed-top.hidden-md.hidden-lg
-    button.btn.btn-default.navbar-btn.navbar-left(type='button' data-toggle='offcanvas' data-target='#mobileNav' data-canvas='body')
-      span.glyphicon.glyphicon-menu-hamburger(aria-hidden='true')
+  //.navbar.navbar-inverse.navbar-fixed-top.hidden-md.hidden-lg
+  //  button.btn.btn-default.navbar-btn.navbar-left(type='button' data-toggle='offcanvas' data-target='#mobileNav' data-canvas='body')
+  //    span.glyphicon.glyphicon-menu-hamburger(aria-hidden='true')
   .main-content
     .container-fluid
       .row
@@ -157,8 +157,9 @@ block content
                       h3 Groomsman
                       h4 Mike Higgs
                 .col-sm-6.col-md-4
-                  .thumbnail
-                    img(src='/images/weddingparty/zach2.jpg')
+                  .thumbnail.hvr-glow
+                    a(target='_blank' href='https://www.facebook.com/zachary.swint?fref=ts')
+                      img(src='/images/weddingparty/zach2.jpg')
                     .caption
                       h3 Groomsman
                       h4 Zach Swint
@@ -240,7 +241,7 @@ block content
               .container-fluid
                 .row
                     .col-sm-12.col-md-10.col-md-offset-1
-                      form(action='/music' method='post' id='login_form')
+                      form(action='/api/music/new' method='post' id='login_form')
                         .panel.panel-default
                           .panel-body
                             .form-group
@@ -248,13 +249,13 @@ block content
                               input.form-control(type='text' name='name' placeholder='Your Name')
                             .form-group
                               label Song Request #1
-                              input.form-control(type='text' name='requestOne' placeholder='Artist / Song Title' )
+                              input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
                             .form-group
                               label Song Request #2
-                              input.form-control(type='text' name='requestTwo' placeholder='Artist / Song Title' )
+                              input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
                             .form-group
                               label Song Request #3
-                              input.form-control(type='text' name='requestThree' placeholder='Artist / Song Title' )
+                              input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
                             button.btn.btn-success(type='submit') Submit
             .registry.article
               h1.content-title Registry
@@ -294,12 +295,13 @@ block content
                       label Question
                       textarea.form-control(rows='3' name='question' placeholder='Question')
                     button.btn.btn-success(type='submit') Submit
-          - if(admin == true)
-            .admintools.article
-              h1.content-title Admin Tools
-              hr
-              h2= hits
-              h2= down
+            - if(admin == true)
+              .admintools.article
+                h1.content-title Admin Tools
+                hr
+                h2 Hits: {{ hits }}
+                h2 Status:&nbsp;
+                  button.btn(ng-click='toggleStatus()') {{ status }}
 
   .modal.fade(id='picModal' tabindex='1' role='dialog')
     .modal-dialog

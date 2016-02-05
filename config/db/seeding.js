@@ -7,6 +7,7 @@
 // Load Models
 var User = require('../../models/user');
 var Data = require('../../models/data');
+var Music = require('../../models/music');
 
 // Add guest user if not there
 User.findOne({ 'local.username' :  'Guest' }, function(err, user){
