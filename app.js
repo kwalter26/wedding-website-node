@@ -66,7 +66,11 @@ app.use(session({secret:'thisisasuperdupersecret',cookie:{_expires:60000}}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+
+// User for call libraries in jade files
+app.use('/bower_components',express.static(path.join(__dirname, '/bower_components')));
 app.use(express.static(path.join(__dirname, 'public')));
+
 require('./config/passport')(passport); // pass passport for configuration
 
 ///////////////////////////////////////////////////////////////////
