@@ -1,3 +1,5 @@
 database/
 mongo.log
 mongod.conf
+node_modules/
+bower_components/
