@@ -1,0 +1,7 @@
+- if(admin == true)
+    .admintools.article
+        h1.content-title Admin Tools
+        hr
+        h2 Hits: {{ hits }}
+        h2 Status:&nbsp;
+            button.btn(ng-click='toggleStatus()') {{ status }}

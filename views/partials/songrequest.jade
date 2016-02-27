@@ -1,0 +1,22 @@
+.songrequest.article
+ h1.content-title Song Requests
+ hr
+ .container-fluid
+  .row
+   .col-sm-12.col-md-10.col-md-offset-1
+    form(action='/api/music/new' method='post' id='login_form')
+     .panel.panel-default
+      .panel-body
+       .form-group
+        label Name
+        input.form-control(type='text' name='name' placeholder='Your Name')
+       .form-group
+        label Song Request #1
+        input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
+       .form-group
+        label Song Request #2
+        input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
+       .form-group
+        label Song Request #3
+        input.form-control(type='text' name='request' placeholder='Artist / Song Title' )
+       button.btn.btn-success(type='submit') Submit

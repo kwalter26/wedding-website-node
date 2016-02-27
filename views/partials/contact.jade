@@ -1,0 +1,21 @@
+.contact.article
+ h1.content-title Contact
+ hr
+ h2 Need some information or have a question regarding the wedding? Feel free to call, email, or submit the form below anytime, and Katie or Kyle will respond as soon as we can.
+ ul
+  li Kyle Cell:   309-256-1403
+  li Katie Cell:  309-258-6534
+  li Email:       kkwedding26@gmail.com
+ form(action='/contact' method='post' id='contact-form')
+  .panel.panel-default
+   .panel-body
+    .form-group
+     label Name
+     input.form-control(type='text' name='name' placeholder='Your Name')
+    .form-group
+     label Email
+     input.form-control(type='email' name='email' placeholder='Email')
+    .form-group
+     label Question
+     textarea.form-control(rows='3' name='question' placeholder='Question')
+    button.btn.btn-success(type='submit') Submit
