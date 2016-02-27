@@ -2,9 +2,359 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92b7d2a5-1dcd-422d-9baf-a065db58db62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/.csscomb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/.csslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/background-variant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/border-radius.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/center-block.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/clearfix.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/gradients.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/grid-framework.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/hide-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/image.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/nav-divider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/nav-vertical-align.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/opacity.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/progress-bar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/reset-filter.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/reset-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/resize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/responsive-visibility.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/size.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/tab-focus.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/table-row.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/text-emphasis.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/text-overflow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/mixins/vendor-prefixes.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/print.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/responsive-embed.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/theme.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/bootstrap/less/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/countdown/countdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/flowtype/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/flowtype/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/flowtype/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/flowtype/flowtype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/Hover-master.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/css/demo-page.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/css/hover-min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/css/hover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/hover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/_hacks.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/_mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/_options.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_bob.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_bounce-in.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_bounce-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_buzz-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_buzz.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_float.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_grow-rotate.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_grow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_hang.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_pop.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_pulse-grow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_pulse-shrink.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_pulse.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_push.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_rotate.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_shrink.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_sink.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_skew-backward.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_skew-forward.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_skew.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-bottom.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-horizontal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-skew.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-to-bottom-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-to-top-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-top.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/2d-transitions/_wobble-vertical.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_back-pulse.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_bounce-to-bottom.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_bounce-to-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_bounce-to-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_bounce-to-top.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_fade.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_radial-in.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_radial-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_rectangle-in.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_rectangle-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_shutter-in-horizontal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_shutter-in-vertical.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_shutter-out-horizontal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_shutter-out-vertical.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_sweep-to-bottom.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_sweep-to-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_sweep-to-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/background-transitions/_sweep-to-top.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_border-fade.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_hollow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_outline-in.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_outline-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_overline-from-center.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_overline-from-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_overline-from-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_overline-reveal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_reveal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_ripple-in.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_ripple-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_round-corners.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_trim.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_underline-from-center.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_underline-from-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_underline-from-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/border-transitions/_underline-reveal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/curls/_curl-bottom-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/curls/_curl-bottom-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/curls/_curl-top-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/curls/_curl-top-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-back.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-bob.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-bounce-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-bounce.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-buzz-out.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-buzz.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-down.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-drop.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-fade.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-float-away.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-float.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-forward.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-grow-rotate.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-grow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-hang.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-pop.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-pulse-grow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-pulse-shrink.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-pulse.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-push.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-rotate.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-shrink.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-sink-away.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-sink.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-spin.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-up.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-wobble-horizontal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/icons/_icon-wobble-vertical.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_box-shadow-inset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_box-shadow-outset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_float-shadow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_glow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_grow-shadow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_shadow-radial.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/shadow-and-glow-transitions/_shadow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-bottom.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-float-bottom.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-float-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-float-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-float-top.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-left.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-right.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/effects/speech-bubbles/_bubble-top.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/less/hover.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/logo-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/modern-slide-in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/photo-stack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/_hacks.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/_options.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_bob.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_bounce-in.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_bounce-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_buzz-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_buzz.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_grow-rotate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_grow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_hang.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_pop.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_pulse-grow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_pulse-shrink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_pulse.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_push.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_rotate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_shrink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_sink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_skew-backward.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_skew-forward.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_skew.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-bottom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-horizontal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-skew.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-to-bottom-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-to-top-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-top.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/2d-transitions/_wobble-vertical.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_back-pulse.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_bounce-to-bottom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_bounce-to-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_bounce-to-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_bounce-to-top.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_fade.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_radial-in.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_radial-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_rectangle-in.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_rectangle-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_shutter-in-horizontal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_shutter-in-vertical.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_shutter-out-horizontal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_shutter-out-vertical.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_sweep-to-bottom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_sweep-to-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_sweep-to-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/background-transitions/_sweep-to-top.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_border-fade.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_hollow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_outline-in.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_outline-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_overline-from-center.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_overline-from-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_overline-from-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_overline-reveal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_reveal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_ripple-in.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_ripple-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_round-corners.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_trim.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_underline-from-center.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_underline-from-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_underline-from-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/border-transitions/_underline-reveal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/curls/_curl-bottom-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/curls/_curl-bottom-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/curls/_curl-top-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/curls/_curl-top-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-back.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-bob.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-bounce-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-bounce.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-buzz-out.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-buzz.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-down.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-drop.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-fade.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-float-away.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-forward.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-grow-rotate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-grow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-hang.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-pop.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-pulse-grow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-pulse-shrink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-pulse.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-push.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-rotate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-shrink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-sink-away.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-sink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-spin.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-up.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-wobble-horizontal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/icons/_icon-wobble-vertical.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_box-shadow-inset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_box-shadow-outset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_float-shadow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_glow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_grow-shadow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_shadow-radial.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/shadow-and-glow-transitions/_shadow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-bottom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-float-bottom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-float-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-float-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-float-top.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-right.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/effects/speech-bubbles/_bubble-top.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/scss/hover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/sequence-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/hover/two-up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jasny-bootstrap/css/jasny-bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jasny-bootstrap/css/jasny-bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jasny-bootstrap/css/jasny-bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jasny-bootstrap/js/jasny-bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jasny-bootstrap/js/jasny-bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jquery/jquery-2.1.4.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.less" afterPath="$PROJECT_DIR$/public/stylesheets/style.less" />
     </list>
     <ignored path="wedding-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +379,7 @@
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -38,28 +388,38 @@
       <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.296296">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state vertical-scroll-proportion="-3.7777777">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/login.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1904762">
+            <state vertical-scroll-proportion="-0.5151515">
               <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0655106">
+              <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -149,8 +509,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
       </list>
     </option>
   </component>
@@ -162,9 +522,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="269" />
-    <option name="width" value="1412" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,57 +582,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedding-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedding-website-node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedding-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedding-website-node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedding-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedding-website-node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,15 +822,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="269" y="0" width="1412" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26419213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19125395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1017316" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40437788" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37987012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1843318" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -625,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/libs/bootstrap/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -705,13 +1009,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/libs/bootstrap/less/jumbotron.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5862069">
@@ -719,37 +1016,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/libs/bootstrap/less/input-groups.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73513514">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/ourstory/grad.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/libs/hover/css/hover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3207547">
-          <caret line="2909" column="1" selection-start-line="2871" selection-start-column="0" selection-end-line="2909" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/libs/bootstrap/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91271347">
-          <caret line="276" column="4" selection-start-line="276" selection-start-column="4" selection-end-line="276" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/fonts.less">
@@ -882,23 +1151,7 @@
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.296296">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -921,8 +1174,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1904762">
+        <state vertical-scroll-proportion="-0.5151515">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7777777">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0655106">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
           <folding />
         </state>
       </provider>
