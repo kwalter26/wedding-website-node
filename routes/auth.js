@@ -13,7 +13,7 @@ module.exports = function(passport){
     });
 
     router.post('/login', isDown, recordHit, passport.authenticate('local-login', {
-        successRedirect: '/', // redirect to the secure profile section
+        successRedirect: '/home', // redirect to the secure profile section
         failureRedirect: '/auth/login', // redirect back to the signup page if there is an error
         failureFlash: true // allow flash messages
     }));
@@ -23,7 +23,7 @@ module.exports = function(passport){
     });
 
     router.post('/adminlogin', passport.authenticate('local-login', {
-        successRedirect: '/', // redirect to the secure profile section
+        successRedirect: '/home', // redirect to the secure profile section
         failureRedirect: '/auth/adminlogin', // redirect back to the signup page if there is an error
         failureFlash: true // allow flash messages
     }));

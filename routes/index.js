@@ -27,10 +27,11 @@ module.exports = function(app,passport) {
     res.render('partials/' + name);
   });
 
-  app.get('/*', isLoggedIn, function(req,res,next){
+  //app.get('/*', isLoggedIn, function(req,res,next){
+  app.get('/*', function(req,res,next){
     res.render('index', {
       title: 'Katie and Kyle Walk Down the Aisle',
-      admin: req.user.local.admin
+      //admin: req.user.local.admin
     });
   });
 
