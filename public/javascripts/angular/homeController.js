@@ -7,16 +7,6 @@ angular.module('weddingApp')
             $('body').css({
                 'background-image':'url("/images/Kyle_Katie_Engagement-78.jpg")'
             });
-            // Clock count down
-            var targetDate = new Date(2016,06,9);
-            //setInterval(function(){
-            //    var d = countdown(targetDate)
-            //    $('.month').text(d.months);
-            //    $('.day').text(d.days);
-            //    $('.hour').text(d.hours);
-            //    $('.min').text(d.minutes);
-            //    $('.sec').text(d.seconds);
-            //},1000);
             $('.countDown').countdown('2016/07/09',{elapse:true})
                 .on('update.countdown',function(event){
                     $('.month').text(event.strftime('%m'));
