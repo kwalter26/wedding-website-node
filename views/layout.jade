@@ -3,7 +3,8 @@ html(ng-app='weddingApp')
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body(ng-controller="weddingController")
+    base(href='/')
+  body.bg
     block content
 
     // Libraries
@@ -11,8 +12,14 @@ html(ng-app='weddingApp')
     script(src="/bower_components/angular-route/angular-route.min.js")
     script(src="/bower_components/jquery/dist/jquery.min.js")
     script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
-    script(src="/bower_components/jasny-bootstrap/jasny-bootstrap.min.js")
+    //script(src="/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js")
     script(src="/bower_components/countdown/dest/countdown.min.js")
 
-    //  My Scripts
-    script(src="/javascripts/weddingApp.js")
+
+    // Angular App
+    script(src="/javascripts/angular/weddingApp.js")
+
+
+    // Angular Controllers
+    script(src="/javascripts/angular/homeController.js")
+    script(src="/javascripts/angular/ourstoryController.js")

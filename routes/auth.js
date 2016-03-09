@@ -9,28 +9,28 @@ module.exports = function(passport){
     var Data = require('../models/data');
 
     router.get('/login', isDown, function (req, res, next) {
-        res.render('login', {title: 'Join the Adventure', message: req.flash('loginMessage')});
+        res.render('auth/login', {title: 'Join the Adventure', message: req.flash('loginMessage')});
     });
 
     router.post('/login', isDown, recordHit, passport.authenticate('local-login', {
         successRedirect: '/', // redirect to the secure profile section
-        failureRedirect: '/user/login', // redirect back to the signup page if there is an error
+        failureRedirect: '/auth/login', // redirect back to the signup page if there is an error
         failureFlash: true // allow flash messages
     }));
 
     router.get('/adminlogin', function (req, res, next) {
-        res.render('adminlogin', {title: 'Join the Adventure', message: req.flash('loginMessage')});
+        res.render('auth/adminlogin', {title: 'Join the Adventure', message: req.flash('loginMessage')});
     });
 
     router.post('/adminlogin', passport.authenticate('local-login', {
         successRedirect: '/', // redirect to the secure profile section
-        failureRedirect: '/user/adminlogin', // redirect back to the signup page if there is an error
+        failureRedirect: '/auth/adminlogin', // redirect back to the signup page if there is an error
         failureFlash: true // allow flash messages
     }));
 
     router.get('/logout', function (req, res) {
         req.logout();
-        res.redirect('/user/login');
+        res.redirect('/auth/login');
     });
 
     function recordHit(req, res, next) {

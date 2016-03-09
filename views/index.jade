@@ -19,19 +19,19 @@ block content
     .container-fluid
       .row
         .col-md-4.hidden-sm.hidden-xs.fixedthing
-          .panel.panel-default.section(id='main-menu')
-            h1.resizable.text-center Katie & Kyle
+          .panel.panel-default.section.main-menu
+            h1.teal.font-KGChasingCars.resizable.text-center Katie & Kyle
             br
-            h3.resizable.text-center(id='menu-date') July 09, 2016
-            h2.resizable.text-center(id='menu-location') Morton, Illinois
+            h4.teal.font-hbsketch.resizable.text-center(id='menu-date') July 09, 2016
+            h2.teal.font-without-sun.resizable.text-center(id='menu-location') Morton, Illinois
             br
-            h4.resizable.text-center(id='menu-paragraph')  welcome to our wedding website!
+            h5.teal.font-league.resizable.text-center(id='menu-paragraph')  welcome to our wedding website!
             hr.resizable-hr
             ul
               li.h2.menu-link
-                a.resizable(id='home-link' href='#' ng-click='getHome()') Home
+                a.resizable(id='home-link' href='/home') Home
               li.h2.menu-link
-                a.resizable(id='out-story-link' href='#' ng-click='getOurStory()') Our Story
+                a.resizable(id='out-story-link' href='/ourstory') Our Story
               li.h2.menu-link
                 a.resizable( id='wedding-party-link' href='#' ng-click='getWeddingParty()') Wedding Party
               li.h2.menu-link
@@ -56,7 +56,7 @@ block content
 
         // Main content ===============================================================
         .col-md-8.col-md-offset-4
-          .section(id='main-content' )
+          .section(id='main-content' ng-view)
 
 
 

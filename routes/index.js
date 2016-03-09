@@ -4,23 +4,30 @@
 
 module.exports = function(app,passport) {
 
-  var user = require('./user.js')(passport);
+  var Data = require('../models/data');
+
+  var auth = require('./auth.js')(passport);
   var music = require('./api/music');
   var contact = require('./api/contact');
   var data = require('./api/data');
-  var clientRoute = require('./clientRoute.js')
 
-  app.use('/user',user);
+  app.use('/auth',auth);
   app.use('/api/music',music);
   app.use('/api/contact',contact);
   app.use('/api/data',data);
-  app.use('/route',clientRoute);
+
 
   app.get('/down',function(req,res,next){
     res.render('down');
   });
 
-  app.get('/*', isDown, isLoggedIn, function(req,res,next){
+  app.get('/partial/:name', function (req, res){
+    var name = req.params.name;
+    console.log('Partial attempted');
+    res.render('partials/' + name);
+  });
+
+  app.get('/*', isLoggedIn, function(req,res,next){
     res.render('index', {
       title: 'Katie and Kyle Walk Down the Aisle',
       admin: req.user.local.admin
@@ -34,7 +41,7 @@ module.exports = function(app,passport) {
     if (req.isAuthenticated())
       return next();
     // if they aren't redirect them to the home page
-    res.redirect('/user/login');
+    res.redirect('/auth/login');
   }
   function isDown(req, res, next) {
     var admin = false;
