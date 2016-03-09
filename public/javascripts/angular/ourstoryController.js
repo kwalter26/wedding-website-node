@@ -7,5 +7,6 @@ angular.module('weddingApp')
             $('body').css({
                 'background-image':'url("/images/Kyle_Katie_Engagement-46.jpg")'
             });
+            console.log('init2');
         }
     });
