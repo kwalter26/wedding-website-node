@@ -4,16 +4,16 @@ html(ng-app='weddingApp')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     base(href='/')
-  body.bg
+  body.bg(ng-controller='mainController')
     block content
-
+    .preload-01.preload-02.preload-03
     // Libraries
     script(src="/bower_components/angular/angular.min.js")
     script(src="/bower_components/angular-route/angular-route.min.js")
     script(src="/bower_components/jquery/dist/jquery.min.js")
     script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
-    //script(src="/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js")
-    script(src="/bower_components/countdown/dest/countdown.min.js")
+    script(src="/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js")
+    script(src="/bower_components/jquery.countdown/dist/jquery.countdown.min.js")
 
 
     // Angular App
@@ -23,3 +23,4 @@ html(ng-app='weddingApp')
     // Angular Controllers
     script(src="/javascripts/angular/homeController.js")
     script(src="/javascripts/angular/ourstoryController.js")
+    script(src="/javascripts/angular/weddingpartyController.js")

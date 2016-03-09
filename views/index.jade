@@ -1,16 +1,16 @@
 extends layout
 
 block content
-  .main.background.in
-  .background.out
-  //nav.navmenu.navmenu-inverted.navmenu-fixed-left.offcanvas(id='mobileNav' role='navigation')
-  //  a.navmenu-brand(href='#') Katie & Kyle
-  //  ul.nav.navmenu-nav
-  //    li
-  //      a(href='#' ng-click='getHome()') Home
-  //    li
-  //      a(href='#' ng-click='getOurStory()') Our Story
 
+  nav.navmenu.navmenu-inverted.navmenu-fixed-left.offcanvas(id='mobileNav' role='navigation')
+    a.navmenu-brand(href='#') Katie & Kyle
+    ul.nav.navmenu-nav
+      li
+        a(href='/home') Home
+      li
+        a(href='/ourstory') Our Story
+  button.btn.btn-success.fixed.hidden-md.hidden-lg(data-toggle='offcanvas' data-target='#mobileNav' data-canvas='body')
+    span.glyphicon.glyphicon-menu-hamburger(aria-hidden='true')
 
   //.navbar.navbar-inverse.navbar-fixed-top.hidden-md.hidden-lg
   //  button.btn.btn-default.navbar-btn.navbar-left(type='button' data-toggle='offcanvas' data-target='#mobileNav' data-canvas='body')
@@ -18,7 +18,7 @@ block content
   .main-content
     .container-fluid
       .row
-        .col-md-4.hidden-sm.hidden-xs.fixedthing
+        .col-md-4.hidden-sm.hidden-xs.fixed
           .panel.panel-default.section.main-menu
             h1.teal.font-KGChasingCars.resizable.text-center Katie & Kyle
             br
@@ -33,7 +33,7 @@ block content
               li.h2.menu-link
                 a.resizable(id='out-story-link' href='/ourstory') Our Story
               li.h2.menu-link
-                a.resizable( id='wedding-party-link' href='#' ng-click='getWeddingParty()') Wedding Party
+                a.resizable( id='wedding-party-link' href='/weddingparty') Wedding Party
               li.h2.menu-link
                 a.resizable(id='wedding-link' href='#' ng-click='getTheWedding()') The Wedding
               li.h2.menu-link
