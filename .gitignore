@@ -4,3 +4,4 @@ mongod.conf
 node_modules/
 public/stylesheets/style.css
 bower_components/
+.idea/
