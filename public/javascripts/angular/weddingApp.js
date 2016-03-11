@@ -2,7 +2,7 @@
  * Created by Kyle Walter on 2/27/2016.
  */
 
-angular.module('weddingApp', ['ngRoute'])
+angular.module('weddingApp', ['ngRoute','ngAnimate'])
     .config(function($routeProvider,$locationProvider){
         $routeProvider
             .when('/home',{
@@ -16,6 +16,30 @@ angular.module('weddingApp', ['ngRoute'])
             .when('/weddingparty',{
                 templateUrl : 'partial/weddingparty.jade',
                 controller : 'weddingpartyController'
+            })
+            .when('/wedding',{
+                templateUrl : 'partial/wedding.jade',
+                controller : 'weddingController'
+            })
+            .when('/travel',{
+                templateUrl : 'partial/travel.jade',
+                controller : 'travelController'
+            })
+            .when('/songrequest',{
+                templateUrl : 'partial/songrequest.jade',
+                controller : 'songrequestController'
+            })
+            .when('/registry',{
+                templateUrl : 'partial/registry.jade',
+                controller : 'registryController'
+            })
+            .when('/rsvp',{
+                templateUrl : 'partial/rsvp.jade',
+                controller : 'rsvpController'
+            })
+            .when('/contact',{
+                templateUrl : 'partial/contact.jade',
+                controller : 'contactController'
             });
         $locationProvider.html5Mode(true);
     })
