@@ -19,7 +19,7 @@ router.post('/new',function(req,res){
     req.body.request.forEach(function(request,index){
         var newMusic = new Music();
         newMusic.name = req.body.name;
-        newMusic.requset = request;
+        newMusic.request = request;
         message += ('Song Request ' + index + ': '+request + '\n');
         newMusic.save(function(err){
             if(err)
