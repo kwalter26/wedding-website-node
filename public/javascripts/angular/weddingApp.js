@@ -16,7 +16,15 @@ angular.module('weddingApp', ['ngRoute'])
             .when('/weddingparty',{
                 templateUrl : 'partial/weddingparty.jade',
                 controller : 'weddingpartyController'
-            });
+            })
+            .when('/wedding',{
+                templateUrl : 'partial/thewedding.jade',
+                controller : 'weddingController'
+            })
+            .when('/travel',{
+                templateUrl : 'partial/travel.jade',
+                controller : 'travelController'
+            })
         $locationProvider.html5Mode(true);
     })
     .controller('mainController',function($scope){
