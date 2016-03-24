@@ -22,19 +22,19 @@ $(document).ready(function(){
         $('#main-menu').fadeIn('slow');
     });
 
-    // Link Control ======================================
-    $('#home-link').on('click',function(){});
-    $('#our-story-link').on('click',function(){
+    // // Link Control ======================================
+    // $('#home-link').on('click',function(){});
+    // $('#our-story-link').on('click',function(){
 
-        console.log('here');
-        $('#main-content').fadeIn('slow');
-    });
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
-    $().on('click',function(){});
+    //     console.log('here');
+    //     $('#main-content').fadeIn('slow');
+    // });
+    // $().on('click',function(){});
+    // $().on('click',function(){});
+    // $().on('click',function(){});
+    // $().on('click',function(){});
+    // $().on('click',function(){});
+    // $().on('click',function(){});
 
 
 

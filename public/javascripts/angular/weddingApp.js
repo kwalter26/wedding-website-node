@@ -5,6 +5,9 @@
 angular.module('weddingApp', ['ngRoute'])
     .config(function($routeProvider,$locationProvider){
         $routeProvider
+            .when('/',{
+               redirectTo : '/home'
+            })
             .when('/home',{
                 templateUrl : 'partial/home.jade',
                 controller : 'homeController'
@@ -25,6 +28,29 @@ angular.module('weddingApp', ['ngRoute'])
                 templateUrl : 'partial/travel.jade',
                 controller : 'travelController'
             })
+            .when('/songrequest',{
+                templateUrl : 'partial/songrequest.jade',
+                controller : 'songRequestController'
+            })
+            .when('/registry',{
+                templateUrl : 'partial/registry.jade',
+                controller : 'registryController'
+            })
+            .when('/rsvp',{
+                templateUrl : 'partial/rsvp.jade',
+                controller : 'rsvpController'
+            })
+            .when('/contact',{
+                templateUrl : 'partial/contact.jade',
+                controller : 'contactController'
+            })
+            .when('/admin',{
+                templateUrl : 'partial/admin.jade',
+                controller : 'adminController'
+            })
+            .otherwise({
+                redirectTo : '/home'
+            });
         $locationProvider.html5Mode(true);
     })
     .controller('mainController',function($scope){
