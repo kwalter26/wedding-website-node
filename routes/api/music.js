@@ -67,6 +67,28 @@ router.get('/',function(req,res,next){
     });
 });
 
+router.get('/delete/:id',function(req,res,next){
+    Music.findOne({_id:req.params.id},function(err, music){
+        if(err)
+            return err;
+        if(music){
+            music.remove(function(err){
+                if(err){
+                    console.log(err);
+                    return;
+                }
+                Music.find({},function(err, music){
+                    if(err)
+                        return err;
+                    if(music){
+                        res.json(music);
+                    }
+                });
+            })
+        }
+    });
+});
+
 module.exports = router;
 
 

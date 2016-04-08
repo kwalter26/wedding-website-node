@@ -28,4 +28,11 @@ angular.module('weddingApp')
                     $scope.music = music;
                 });
         }
+
+        $scope.deleteMusic = function(id){
+            $http.get('/api/music/delete/' + id)
+                .success(function(music){
+                    $scope.music = music;
+                });
+        }
     });

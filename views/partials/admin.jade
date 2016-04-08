@@ -10,7 +10,10 @@
                 tr
                     th Name
                     th Request
+                    th Edit
             tbody
                 tr(ng-repeat='request in music')
                     td {{request.name}}
                     td {{request.request}}
+                    td
+                        button.btn(type='button' ng-click='deleteMusic(request._id)') Remove
