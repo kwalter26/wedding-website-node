@@ -1,7 +1,19 @@
 - if(admin == true)
-    .admintools.article
-        h1.content-title Admin Tools
+    .admintools.article.panel.panel-default.panel-content(ng-init='init()')
+        h2.content-title Admin Tools
         hr
-        h2 Hits: {{ hits }}
-        h2 Status:&nbsp;
-            button.btn(ng-click='toggleStatus()') {{ status }}
+        h2.font-without-sun Hits: {{ hits }}
+        hr
+        h2.font-without-sun Music
+        table.table.table-hover
+            thead
+                tr
+                    th Name
+                    th Request
+                    th Edit
+            tbody
+                tr(ng-repeat='request in music')
+                    td {{request.name}}
+                    td {{request.request}}
+                    td
+                        button.btn(type='button' ng-click='deleteMusic(request._id)') Remove

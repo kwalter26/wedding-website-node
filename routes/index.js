@@ -23,15 +23,23 @@ module.exports = function(app,passport) {
 
   app.get('/partial/:name', function (req, res){
     var name = req.params.name;
+    var admin = false;
+    if(req.user != undefined){
+      admin = req.user.local.admin;
+    }
     console.log('Partial attempted');
-    res.render('partials/' + name);
+    res.render('partials/' + name,{admin: admin});
   });
 
   //app.get('/*', isLoggedIn, function(req,res,next){
   app.get('/*', function(req,res,next){
+    var admin = false;
+    if(req.user != undefined){
+      admin = req.user.local.admin;
+    }
     res.render('index', {
       title: 'Katie and Kyle Walk Down the Aisle',
-      //admin: req.user.local.admin
+      admin: admin
     });
   });
 

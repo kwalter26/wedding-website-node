@@ -1,12 +1,8 @@
-/**
- * Created by Kyle Walter on 3/10/2016.
- */
 angular.module('weddingApp')
-    .controller('ourstoryController',function($scope){
-        $scope.init = function(){
+    .controller('weddingController',function($scope){
+       $scope.init = function(){
             $('body').css({
-                'background-image':'url("/images/Kyle_Katie_Engagement-46.jpg")'
+                'background-image':'url("/images/Kyle_Katie_Engagement-164.jpg")'
             });
-            console.log('init2');
-        }
+        } 
     });

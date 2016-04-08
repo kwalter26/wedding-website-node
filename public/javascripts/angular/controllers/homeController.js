@@ -7,7 +7,7 @@ angular.module('weddingApp')
             $('body').css({
                 'background-image':'url("/images/Kyle_Katie_Engagement-78.jpg")'
             });
-            $('.countDown').countdown('2016/07/09',{elapse:true})
+            $('.countDown').countdown('2016/07/09 14:00:00',{elapse:true})
                 .on('update.countdown',function(event){
                     $('.month').text(event.strftime('%m'));
                     $('.day').text(event.strftime('%d'));

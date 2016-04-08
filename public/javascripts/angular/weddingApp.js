@@ -2,9 +2,12 @@
  * Created by Kyle Walter on 2/27/2016.
  */
 
-angular.module('weddingApp', ['ngRoute','ngAnimate'])
+angular.module('weddingApp', ['ngRoute'])
     .config(function($routeProvider,$locationProvider){
         $routeProvider
+            .when('/',{
+               redirectTo : '/home'
+            })
             .when('/home',{
                 templateUrl : 'partial/home.jade',
                 controller : 'homeController'
@@ -18,7 +21,7 @@ angular.module('weddingApp', ['ngRoute','ngAnimate'])
                 controller : 'weddingpartyController'
             })
             .when('/wedding',{
-                templateUrl : 'partial/wedding.jade',
+                templateUrl : 'partial/thewedding.jade',
                 controller : 'weddingController'
             })
             .when('/travel',{
@@ -27,7 +30,7 @@ angular.module('weddingApp', ['ngRoute','ngAnimate'])
             })
             .when('/songrequest',{
                 templateUrl : 'partial/songrequest.jade',
-                controller : 'songrequestController'
+                controller : 'songRequestController'
             })
             .when('/registry',{
                 templateUrl : 'partial/registry.jade',
@@ -40,6 +43,13 @@ angular.module('weddingApp', ['ngRoute','ngAnimate'])
             .when('/contact',{
                 templateUrl : 'partial/contact.jade',
                 controller : 'contactController'
+            })
+            .when('/admin',{
+                templateUrl : 'partial/admin.jade',
+                controller : 'adminController'
+            })
+            .otherwise({
+                redirectTo : '/home'
             });
         $locationProvider.html5Mode(true);
     })
