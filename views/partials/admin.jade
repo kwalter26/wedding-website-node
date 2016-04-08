@@ -3,5 +3,14 @@
         h2.content-title Admin Tools
         hr
         h2.font-without-sun Hits: {{ hits }}
-        h2 Status:&nbsp;
-            button.btn(ng-click='toggleStatus()') {{ status }}
+        hr
+        h2.font-without-sun Music
+        table.table.table-hover
+            thead
+                tr
+                    th Name
+                    th Request
+            tbody
+                tr(ng-repeat='request in music')
+                    td {{request.name}}
+                    td {{request.request}}
